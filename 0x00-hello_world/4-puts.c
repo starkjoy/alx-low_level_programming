@@ -1,9 +1,11 @@
 #include <stdio.h>
 
-/* Program displays a string using puts function */
+/**
+ *  main - Prints "Programming is like building a multilingual puzzle"
+ */
 
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle\n");
+	puts("\"Programming is like building a multilingual puzzl\n");
 	return (0);
 }
