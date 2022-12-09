@@ -13,7 +13,7 @@ int main(void)
 	for (base = 'z';  base >= 'a'; base--)
 	{
 		putchar(base);
-		if (base == 'z')
+		if (base == 'a')
 		{
 			putchar('\n');
 		}
