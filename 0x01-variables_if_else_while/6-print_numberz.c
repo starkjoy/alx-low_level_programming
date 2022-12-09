@@ -12,7 +12,7 @@ int main(void)
 
 	for (base = 0;  base < 10 ; base++)
 	{
-		printf("%i", base);
+		putchar("%i", base);
 		putchar('\n');
 	}
 	return (0);
