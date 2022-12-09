@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int base;
+	char base;
 
 	for (base = '0';  base <= '9'; base++)
 	{
@@ -19,7 +19,7 @@ int main(void)
 		}
 		else
 		{
-			base = (char) base + ", ";
+			base = base + ", ";
 		}
 	}
 
