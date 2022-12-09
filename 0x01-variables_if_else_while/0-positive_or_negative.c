@@ -17,7 +17,7 @@ int main(void)
 
 	if (n > 0)
 	{
-		printf(n);
+		printf("%i\n", n);
 	}
 	if (n == 0)
 	{
