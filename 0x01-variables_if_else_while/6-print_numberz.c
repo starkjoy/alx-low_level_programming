@@ -12,7 +12,8 @@ int main(void)
 
 	for (base = 0;  base < 10 ; base++)
 	{
-		putchar((char)"%i", base);
+		char new = (char) base;
+		putchar(new);
 		putchar('\n');
 	}
 	return (0);
