@@ -9,11 +9,16 @@
 int main(void)
 {
 	int base;
+	int hex;
 
-	for (base = '0';  base <= 'f'; base++)
+	for (base = '0';  base <= '9'; base++)
 	{
 		putchar(base);
-		if (base == 'f')
+	}
+	for (hex = 'a'; hex <= 'f'; hex++)
+	{
+		putchar(hex);
+		if (hex == 'f')
 		{
 			putchar('\n');
 		}
