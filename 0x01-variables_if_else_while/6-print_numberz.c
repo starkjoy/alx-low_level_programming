@@ -10,9 +10,9 @@ int main(void)
 {
 	int base;
 
-	for (base = 0;  base < 10 ; base++)
+	for (base = '0';  base < '9'; base++)
 	{
-		(int) putchar(base);
+		putchar(base);
 		if (base == 9)
 		{
 			putchar('\n');
