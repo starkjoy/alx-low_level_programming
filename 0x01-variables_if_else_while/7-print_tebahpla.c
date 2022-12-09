@@ -10,7 +10,7 @@ int main(void)
 {
 	int base;
 
-	for (base = 'z';  base <= 'a'; base--)
+	for (base = 'z';  base >= 'a'; base--)
 	{
 		putchar(base);
 		if (base == 'z')
