@@ -13,7 +13,7 @@ int main(void)
 	for (base = 0;  base < 10 ; base++)
 	{
 		printf("%i", base);
-		if (base == 10)
+		if (base == 9)
 		{
 			putchar('\n');
 		}
