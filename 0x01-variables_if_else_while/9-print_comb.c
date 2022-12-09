@@ -19,7 +19,7 @@ int main(void)
 		}
 		else
 		{
-			base = printf( "%c"  + ", ", base);
+			printf( "%c, ", base);
 		}
 	}
 
