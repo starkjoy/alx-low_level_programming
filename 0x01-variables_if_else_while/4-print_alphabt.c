@@ -12,10 +12,13 @@ int main(void)
 
 	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
-		putchar(alpha);
-		if (alpha == 'z')
+		if (!(alpha == 'q' || alpha == 'e'))
 		{
-			putchar('\n');
+			putchar(alpha);
+			if (alpha == 'z')
+			{
+				putchar('\n');
+			}
 		}
 	}
 	return (0);
