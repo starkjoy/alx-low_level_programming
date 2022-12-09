@@ -10,7 +10,7 @@ int main(void)
 {
 	int base;
 
-	for (base = 0;  base <= 10 ; base++)
+	for (base = 0;  base < 10 ; base++)
 	{
 		printf("%i", base);
 		if (base == 10)
