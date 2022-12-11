@@ -16,7 +16,7 @@ int main(void)
 		for (c = b + 1; c < '9'; c++)
 		{
 
-			if (c != d)
+			if (c != b)
 			{
 				putchar(b);
 				putchar(c);
