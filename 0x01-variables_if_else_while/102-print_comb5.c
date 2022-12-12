@@ -1,82 +1,44 @@
 #include <stdio.h>
 
-
 /**
-
- * main - Entry point
-
+ * main - main prints combinations of two numbers
  *
-
- * Return: Always 0
-
-*/
-
-
+ * Return: return 0
+ */
 
 int main(void)
-
 {
+	int p;
+	int q;
+	int r;
+	int s;
 
-	int p, q, r, s;
-
-
-
-	for (p = '0'; p <= '9'; p++)
-
+	for (p = '0';  p <='9';  p++)
 	{
-
-		for (q = '0'; q <= '8'; q++)
-
+		for (q = '0'; q <= '9'; q++)
 		{
+			for (r = '0'; r <='9'; r++)
+			{
+				for (s = '0'; s <= '9'; s++)
+				{
+					if (s > q)
+					{
+						putchar(p);
+						putchar(q);
+						putchar(' ');
+						putchar(r);
+						putchar(s);
 
-		    for (r = '0'; r <= '9'; r++)
+						if (q == '8' && r == '9')
+							continue;
 
-		    {
-
-		        for (s = '0'; s <= '9'; s++)
-
-		        {
-
-			        if ((p == r) && (q == s))
-
-			            continue;
-
-			        putchar(p);
-
-			        putchar(q);
-
-			        putchar(' ');
-
-			        putchar(r);
-
-			        putchar(s);
-
-
-
-			        if (p == 98 && q == 99)
-
-				        continue;
-
-
-
-			        putchar(',');
-
-			        putchar(' ');
-
-		        }
-
-		    }
-
+						putchar(',');
+						putchar(' ');
+					}
+				}
+			}
 		}
-
 	}
-
-
-
 	putchar('\n');
-
-
-
 	return (0);
-
 }
