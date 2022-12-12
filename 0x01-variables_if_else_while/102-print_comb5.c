@@ -15,7 +15,6 @@ int main(void)
 	{
 		for (c = 1; c <= 99; c++)
 		{
-			for
 			putchar((b / 10) + '0');
 			putchar((b % 10) + '0');
 
