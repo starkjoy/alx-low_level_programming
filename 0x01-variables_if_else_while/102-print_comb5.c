@@ -21,7 +21,7 @@ int main(void)
 			{
 				for (s = '0'; s <= '9'; s++)
 				{
-					if (q < s)
+					if ((p != r) || (q != s) || (r != p) || (s != q))
 					{
 						putchar(p);
 						putchar(q);
