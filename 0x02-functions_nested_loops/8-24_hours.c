@@ -1,9 +1,9 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - main prints the absolute of an integer
- *
- * Return: returns 0
+ * jack_bauer - prints all time 00:00 - 24:00
+ * Description: For '24 series'
+ * Return: returns void
  */
 
 void jack_bauer(void)
@@ -24,14 +24,4 @@ void jack_bauer(void)
 
 		}
 	}
-
-	return (0);
-}
-
-
-int main(void)
-{
-	jack_bauer();
-
-	return (0);
 }
