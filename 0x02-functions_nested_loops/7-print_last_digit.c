@@ -12,6 +12,7 @@
 int print_last_digit(int i)
 {
 
+	_abs(i);
 	i = i % 10;
 	_putchar(i + '0');
 
