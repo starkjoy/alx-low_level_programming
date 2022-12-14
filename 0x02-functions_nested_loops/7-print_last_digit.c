@@ -12,8 +12,15 @@
 
 int print_last_digit(int i)
 {
-	i = abs(i) % 10;
-	_putchar(i + '0');
+	if ( i != float )
+	{
+		i = abs(i) % 10;
+		_putchar(i + '0');
+	}
+	else
+	{
+		_putchar((i / 10) % 10 + '0');
+	}
 
 	return (i);
 }
