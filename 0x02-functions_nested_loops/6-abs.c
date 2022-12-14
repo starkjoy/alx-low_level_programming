@@ -14,7 +14,6 @@ int _abs(int i)
 	int x;
 
 	x = abs(i);
-	printf("%i \n", x);
 
-	return (0);
+	return (x);
 }
