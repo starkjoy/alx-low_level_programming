@@ -9,10 +9,8 @@
 
 int print_last_digit(int i)
 {
-	int x;
-
 	i = i % 10;
+       	printf("%d%d", i,i);
 
-	x = printf("%d%d", i,i);
-	return (x);
+	return (0);
 }
