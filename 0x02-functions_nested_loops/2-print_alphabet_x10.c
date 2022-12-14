@@ -30,12 +30,10 @@ void print_alphabet_x10(void)
 
 		b++;
 	}
-
-	return;
 }
 
 int main(void)
 {
-
+	print_alphabet();
 	return (0);
 }
