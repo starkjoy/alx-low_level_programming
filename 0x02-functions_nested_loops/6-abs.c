@@ -1,7 +1,9 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - main prints the absolute of an integer
+ * _abs(int i) - printes absolutes of integers
+ * Description: it prints absolutes
+ * @i: accepts integers
  *
  * Return: returns 0
  */
@@ -12,12 +14,4 @@ int _abs(int i)
 	printf("%i \n", i);
 
 	return (i);
-}
-
-
-int main(void)
-{
-	_abs(12.7);
-
-	return (0);
 }
