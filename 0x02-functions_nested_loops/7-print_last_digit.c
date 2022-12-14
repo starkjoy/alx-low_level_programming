@@ -12,7 +12,9 @@
 
 int print_last_digit(int i)
 {	
-	for (int x = '0'; x <= '9'; x++)
+	int x;
+
+	for (x = '0'; x <= '9'; x++)
 	{
 		if (i == x)
 		{
