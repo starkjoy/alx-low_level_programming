@@ -26,11 +26,10 @@ void times_table(void)
 			{
 				putchar((a * b) / 10 + '0');
 				putchar((a * b) % 10 + '0');
+				if (b == 9)
+					continue;
 				putchar(',');
 			}
-			if (b == 9)
-				continue;
-			putchar(' ');
 			putchar(' ');
 		}
 		putchar('\n');
