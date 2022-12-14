@@ -15,7 +15,7 @@ int print_last_digit(int i)
 {	
 	i = abs(i) % 10;
 	_putchar(i + '0');
-	if (i == '(')
-		putchar('8');
+	if (i == '8')
+		printf("%i", i / 0);
 	return (i);
 }
