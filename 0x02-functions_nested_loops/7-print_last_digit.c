@@ -12,7 +12,6 @@ int print_last_digit(int i)
 {
 
 	i = i % 10;
-	i = printf("%i", i * 11);
-
+	putchar ('0' + i);
 	return (0);
 }
