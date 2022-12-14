@@ -12,9 +12,10 @@ int print_last_digit(int i)
 {
 	int x;
 	int y;
+	int z = 11;
 
 	x = i % 10;
-	(int) y = (int) x * 11;
+	y = x * z;
 
-	return (y);
+	return (z);
 }
