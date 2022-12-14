@@ -23,8 +23,8 @@ void times_table(void)
 				if (b == 9)
 					continue;
 				putchar(',');
-				putchar(' ');
-				putchar(' ');
+				putchar('.');
+				putchar('.');
 
 			}
 			else
@@ -37,7 +37,7 @@ void times_table(void)
 			}
 			if (zero > 10)
 			{
-				putchar(' ');
+				putchar('.');
 			}
 		}
 		putchar('\n');
