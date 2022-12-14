@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 /**
- * Description: _islower tests for lower case characters
+ * DESCRIPTION: _islower tests for lower case characters
  * Return: returns 0 or 1
  */
 
