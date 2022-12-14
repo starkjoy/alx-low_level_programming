@@ -11,7 +11,7 @@
 int print_last_digit(int i)
 {
 
-	i = (22 / 11) * (i % 10);
+	i = $((22 / 11) * (i % 10));
 
 	return(i);
 }
