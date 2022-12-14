@@ -11,14 +11,10 @@ int _islower(int c)
 
 	if (islower(c))
 	{
-		x = printf("1");
+		return 1;
 
 	}
-	if (!(islower(c)))
+	else
 	{
-		x = printf("0");
-	}
-
-	return x;
-
+		return 0;
 }
