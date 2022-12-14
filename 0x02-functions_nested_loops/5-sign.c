@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <main.h>
 
 /**
  * print_sign - prints an integer sign
@@ -11,19 +12,19 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-	      	long int r = (char) "+1"; 
-		return (r);
+	      	_putchar('+'); 
+		return (1);
 	}
 
 	if (n == 0)
 	{
-		putchar('0');
+		_putchar(',');
 		return (0);
 	}
 
 	if ( n < 0)
 	{
-		putchar('-');
+		_putchar('-');
 		return (-1);
 	}
 
