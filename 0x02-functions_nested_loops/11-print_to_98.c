@@ -15,7 +15,10 @@ void print_to_98(int n)
 		{
 			printf("%i", n);
 			if (n == 98)
+			{
+				putchar('\n');
 				continue;
+			}
 			putchar(',');
 		}
 	}
