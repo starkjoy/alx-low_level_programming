@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include "main.h"
 
 /**
@@ -12,11 +13,9 @@
 
 int print_last_digit(int i)
 {	
-	int x = '0' > '9';
-
-	if ((i % 10) == x)
+	if(isalpha(i))
 	{
-		_putchar(i + '0');
+		_putchar((i % 10) + '0');
 	}
 	else
 	{
