@@ -28,11 +28,6 @@ void times_table(void)
 				putchar((a * b) % 10 + '0');
 				putchar(',');
 			}
-			putchar(' ');
-			if (zero < 10)
-			{
-				putchar(' ');
-			}
 		}
 		putchar('\n');
 	}
