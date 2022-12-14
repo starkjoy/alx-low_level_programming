@@ -1,8 +1,9 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - main prints the sign of a number
- *
+ * print_sign - prints an integer sign
+ * Description: It checks what sign an integer is
+ * @n: accepts integers of all signs
  * Return: returns 0
  */
 
@@ -32,13 +33,4 @@ int print_sign(int n)
 		putchar('1');
 	}
 
-}
-
-int main(void)
-{
-	print_sign(0);
-	print_sign(5);
-	print_sign(-2);
-
-	return (0);
 }
