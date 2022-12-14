@@ -14,7 +14,7 @@ int print_last_digit(int i)
 	int y;
 
 	x = i % 10;
-	y = (x * 11);
+	(int) y = (int)(x * 11);
 
 	return (y);
 }
