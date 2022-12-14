@@ -12,7 +12,7 @@ int print_sign(int n)
 	if (n > 0)
 	{
 		int x = 1;
-		y = printf("\+%i", x);
+		int y = printf("+%i", x);
 		return (y);
 	}
 
