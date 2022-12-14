@@ -7,7 +7,6 @@
  * Return: returns 0 
  *
  */
-
 void print_alphabet(void)
 {
 	int a;
@@ -19,6 +18,4 @@ void print_alphabet(void)
 			putchar('\n');
 		}
 	}
-
-	return;
 }
