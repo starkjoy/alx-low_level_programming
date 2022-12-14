@@ -10,8 +10,10 @@
 
 int _abs(int i)
 {
-	abs(i);
-	printf("%i \n", i);
+	int f;
 
-	return (i);
+	f = abs(i);
+	printf("%i \n", f);
+
+	return (f);
 }
