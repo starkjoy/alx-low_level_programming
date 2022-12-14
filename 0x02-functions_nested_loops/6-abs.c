@@ -11,9 +11,10 @@
 
 int _abs(int i)
 {
-	
-	abs(i);
-	printf("%i \n", i);
+	int x;
 
-	return (i);
+	x = abs(i);
+	printf("%i \n", x);
+
+	return (x);
 }
