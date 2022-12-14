@@ -5,6 +5,7 @@
  * _islower - checks for lowercase
  * Description: _islower tests for lower case characters
  * Return: returns 0 or 1
+ * @n: accepts charaters
  */
 
 int _islower(int c)
