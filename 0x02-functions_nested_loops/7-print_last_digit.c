@@ -12,7 +12,15 @@
 
 int print_last_digit(int i)
 {	
-	i = abs(i);
-	_putchar((i % 10) + '0');
+	for (int x = '0'; x <= '9'; x++)
+	{
+		if (i == x)
+		{
+			_putchar((i % 10) + '0');
+		}
+	}
+
+	i = abs(i) % 10;
+	_putchar(i + '0');
 	return (i);
 }
