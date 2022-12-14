@@ -19,7 +19,7 @@ int main(void)
 	{
 		fibonacci[1] = fibonacci[i - 1] + fibonacci[i - 2];
 		if ((fibonacci[i] % 2) == 0 && fibonacci[i] < 4000000)
-			sum +- fibonacci[i];
+			sum += fibonacci[i];
 	}
 	printf("%ld\n", sum);
 
