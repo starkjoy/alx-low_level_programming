@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - main prints natural numbers ending at 98
- *
- * Return: returns 0
+ * print_to_98 - prints natural numbers ending at 98
+ * Description: adds up numbers till it ends at 98
+ * @n: accepts integers
+ * Return: void
  */
 
 void print_to_98(int n)
@@ -15,13 +16,4 @@ void print_to_98(int n)
 			continue;
 		putchar(',');
 	}
-	return;
-}
-
-
-int main(void)
-{
-	print_to_98(25);
-
-	return (0);
 }
