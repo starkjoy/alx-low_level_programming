@@ -32,6 +32,7 @@ void print_to_98(int n)
 				continue;
 			}
 			putchar(',');
+			putchar(' ');
 		}
 	}
 }
