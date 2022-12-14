@@ -9,13 +9,12 @@ int _islower(int c)
 {
 	if (islower(c))
 	{
-		putchar(c + '0');
+		printf("1\n");
+
 	}
 	else
 	{
-		putchar( c + '0');
+		printf("0\n");
 	}
-
-	putchar('\n');
 	return 0;
 }
