@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 
 /**
  * print_last_digit - prints exactly that
@@ -13,7 +12,6 @@
 int print_last_digit(int i)
 {	
 	i = abs(i) % 10;
-	_putchar(i + '0');
 
 	return (i);
 }
