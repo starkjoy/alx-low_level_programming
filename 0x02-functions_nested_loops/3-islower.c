@@ -7,15 +7,18 @@
 
 int _islower(int c)
 {
-	if (islower(c) != 0)
+	int x;
+
+	if (islower(c))
 	{
-		printf("1");
+		x = printf("1");
 
 	}
 	if (!(islower(c)))
 	{
-		printf("0");
+		x = printf("0");
 	}
-	return 0;
+
+	return x;
 
 }
