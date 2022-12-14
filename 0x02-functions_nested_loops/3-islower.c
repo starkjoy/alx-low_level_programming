@@ -12,7 +12,7 @@ int _islower(int c)
 		printf("1");
 
 	}
-	else
+	if (!(islower(c)))
 	{
 		printf("0");
 	}
