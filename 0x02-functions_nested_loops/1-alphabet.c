@@ -1,9 +1,7 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
- * main - main prints a list of alphabets
- *
- * Return: returns 0
  *
  * print_alphabet - generates a list of lowercase letters
  *
