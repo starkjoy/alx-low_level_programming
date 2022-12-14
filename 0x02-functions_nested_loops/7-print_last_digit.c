@@ -10,6 +10,8 @@
 int print_last_digit(int i)
 {
 	i = i % 10;
-	printf("%i%i", i);
+	int x;
+
+	x = printf("%i%i", i);
 	return (x);
 }
