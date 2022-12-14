@@ -12,20 +12,16 @@
 
 int print_last_digit(int i)
 {	
-	int x = '0';
-	
-	for (; x <= '9'; x++)
+	int x = '0' > '9';
+
+	if ((i % 10) == x)
 	{
-		if ((i % 10) == x)
-		{
-			_putchar(i + '0');
-		}
-		else
-		{
-			i = abs(i) % 10;
-			_putchar(i + '0');
-			continue;
-		}
+		_putchar(i + '0');
+	}
+	else
+	{
+		i = abs(i) % 10;
+		_putchar(i + '0');
 	}
 	return (i);
 }
