@@ -11,8 +11,8 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		return (+);
-		return (1);
+		int x = "+1";
+		return (x);
 	}
 
 	if (n == 0)
