@@ -20,6 +20,10 @@ void times_table(void)
 			if (zero < 10)
 			{
 				putchar(zero + '0');
+				putchar(' ');
+				putchar(' ');
+				if (b == 9)
+					continue;
 				putchar(',');
 			}
 			else
@@ -30,7 +34,10 @@ void times_table(void)
 					continue;
 				putchar(',');
 			}
-			putchar(' ');
+			if (z > 10);
+			{
+				putchar(' ');
+			}
 		}
 		putchar('\n');
 	}
