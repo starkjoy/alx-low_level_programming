@@ -1,9 +1,9 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - main prints the nine times table
- *
- * Return: returns 0
+ * times_table - prints 9 times table
+ * Description: 9 times table
+ * Return: returns void
  */
 
 void times_table(void)
@@ -35,13 +35,4 @@ void times_table(void)
 		}
 		putchar('\n');
 	}
-	return;
-}
-
-
-int main(void)
-{
-	times_table();
-
-	return (0);
 }
