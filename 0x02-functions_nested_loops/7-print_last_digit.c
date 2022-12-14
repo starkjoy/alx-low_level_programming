@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include "main.h"
 
 /**
@@ -12,7 +13,7 @@
 
 int print_last_digit(int i)
 {
-	if ( i != float )
+	if (isfloat(i))
 	{
 		i = abs(i) % 10;
 		_putchar(i + '0');
