@@ -13,7 +13,7 @@ int print_sign(int n)
 	{
 		int x = 1;
 		int y = printf("+%i", x);
-		return (0);
+		return (x);
 	}
 
 	if (n == 0)
