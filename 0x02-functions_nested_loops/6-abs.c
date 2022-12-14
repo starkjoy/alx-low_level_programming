@@ -16,5 +16,5 @@ int _abs(int i)
 	x = abs(i);
 	printf("%i \n", x);
 
-	return (x);
+	return (0);
 }
