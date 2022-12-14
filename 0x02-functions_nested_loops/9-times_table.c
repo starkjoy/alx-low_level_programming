@@ -28,6 +28,7 @@ void times_table(void)
 				putchar((a * b) % 10 + '0');
 				putchar(',');
 			}
+			putchar(' ');
 		}
 		putchar('\n');
 	}
