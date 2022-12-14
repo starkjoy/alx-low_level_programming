@@ -1,7 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - main prints the addition of two integers
+ * add - adds two numbers
+ * Description: takes two numbers and adds them
+ * @x: accepts first integer
+ * @y: accepts second integer
  *
  * Return: returns 0
  */
@@ -11,13 +14,4 @@ int add(int x, int y)
 	int z = x + y;
 
 	return (z);
-}
-
-
-int main(void)
-{
-	int u = add (3, 4);
-	printf("%i\n", u);
-
-	return (0);
 }
