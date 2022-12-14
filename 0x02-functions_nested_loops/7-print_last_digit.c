@@ -11,7 +11,7 @@
 int print_last_digit(int i)
 {
 
-	i = (i % 10)*11
+	i = (i % 10)*11;
 	
 	return(i);
 }
