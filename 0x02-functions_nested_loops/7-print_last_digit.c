@@ -13,16 +13,18 @@
 int print_last_digit(int i)
 {	
 	int x = '0';
-	x++;
-
-	if (i == x)
+	
+	for (; x <= '9'; x++)
 	{
-		_putchar((i % 10) + '0');
-	}
-	else
-	{
-		i = abs(i) % 10;
-		_putchar(i + '0');
+		if ((i % 10) == x)
+		{
+			_putchar((i + '0');
+		}
+		else
+		{
+			i = abs(i) % 10;
+			_putchar(i + '0');
+		}
 	}
 	return (i);
 }
