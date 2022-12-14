@@ -1,7 +1,5 @@
 #include <stdio.h>
-
 /**
- *
  * print_alphabet - generates a list of lowercase letters
  *
  * Return: returns 0 
