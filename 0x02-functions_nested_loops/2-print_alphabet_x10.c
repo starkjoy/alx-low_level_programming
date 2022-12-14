@@ -31,7 +31,7 @@ void print_alphabet_x10(void)
 		b++;
 	}
 
-	return (0);
+	return;
 }
 
 int main(void)
