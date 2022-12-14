@@ -1,32 +1,20 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - main checks for lowercase letters
- *
- * Return: returns 0
+ * _isalpha - Checks for uppercase letters
+ * Description: it checks if value is an alphabet
+ * Return: returns 0 or 1
+ * @c: accepts characters
  */
 
 int _isalpha(int c)
 {
 	if (isalpha(c))
 	{
-		putchar('1');
+		return (1);
 	}
 	else
 	{
-		putchar('0');
+		return (0);
 	}
-
-	putchar('\n');
-	return 0;
-}
-
-int main(void)
-{
-	int r;
-
-	r = _isalpha('H');
-	r = _isalpha('h');
-
-	return (0);
 }
