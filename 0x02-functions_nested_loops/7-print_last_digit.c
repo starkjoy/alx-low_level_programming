@@ -13,7 +13,7 @@ int print_last_digit(int i)
 	int z = 11;
 
 	i = i % 10;
-	z = putchar("%i", i, i * 11);
+	z = printf("%i", i * 11);
 
 	return (z);
 }
