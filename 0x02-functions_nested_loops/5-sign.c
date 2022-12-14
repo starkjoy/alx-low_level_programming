@@ -11,8 +11,9 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		int x = "+1";
-		return (x);
+		int x = 1;
+		y = printf("\+%i", x);
+		return (y);
 	}
 
 	if (n == 0)
