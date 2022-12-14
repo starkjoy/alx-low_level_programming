@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main"
+#include "main.h"
 
 /**
  * print_last_digit - prints exactly that
