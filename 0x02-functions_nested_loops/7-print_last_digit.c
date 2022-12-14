@@ -14,5 +14,7 @@ int print_last_digit(int i)
 
 	i = i % 10 * 11;
 
+	int x = atoi(i);
+
 	return(x);
 }
