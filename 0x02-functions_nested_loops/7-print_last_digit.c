@@ -10,10 +10,9 @@
 
 int print_last_digit(int i)
 {
-	int z;
 
 	i = i % 10;
-	z = printf("%i", i * 11);
+	printf("%i", i * 11);
 
 	return (0);
 }
