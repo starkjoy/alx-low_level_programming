@@ -7,8 +7,6 @@
 
 int _islower(int c)
 {
-	int x;
-
 	if (islower(c))
 	{
 		return 1;
@@ -17,4 +15,5 @@ int _islower(int c)
 	else
 	{
 		return 0;
+	}
 }
