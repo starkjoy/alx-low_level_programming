@@ -1,8 +1,6 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - main checks for lowercase letters
- *
  * Return: returns 0
  */
 
@@ -19,14 +17,4 @@ int _islower(int c)
 
 	putchar('\n');
 	return 0;
-}
-
-int main(void)
-{
-	int r;
-
-	r = _islower('H');
-	r = _islower('h');
-
-	return (0);
 }
