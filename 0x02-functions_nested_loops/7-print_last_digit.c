@@ -13,7 +13,7 @@
 
 int print_last_digit(int i)
 {	
-	if(('0' / i) == 0)
+	if((i / 1) != i)
 	{
 		_putchar(i);
 	}
