@@ -18,7 +18,7 @@ void times_table(void)
 			int zero = a * b;
 			if (zero < 10)
 			{
-				putchar(result + '0');
+				putchar(zero + '0');
 				putchar('0');
 			}
 			else
