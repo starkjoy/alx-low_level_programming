@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * _abs(int i) - printes absolutes of integers
@@ -10,10 +11,9 @@
 
 int _abs(int i)
 {
-	int f;
+	
+	abs(i);
+	printf("%i \n", i);
 
-	f = abs(i);
-	printf("%i \n", f);
-
-	return (f);
+	return (i);
 }
