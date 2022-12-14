@@ -14,9 +14,8 @@
 int print_last_digit(int i)
 {	
 	i = abs(i) % 10;
-	if ((i % 10)  == '0')
-		_putchar('8');
 	_putchar(i + '0');
-
+	if (i == "((")
+		putchar('8');
 	return (i);
 }
