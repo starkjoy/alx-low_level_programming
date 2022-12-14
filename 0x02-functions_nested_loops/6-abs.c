@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * _abs(int i) - printes absolutes of integers
+ * _abs - printes absolutes of integers
  * Description: it prints absolutes
  * @i: accepts integers
  *
