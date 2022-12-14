@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main"
 
 /**
  * times_table - prints 9 times table
