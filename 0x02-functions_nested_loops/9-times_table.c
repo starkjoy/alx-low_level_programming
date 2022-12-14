@@ -16,8 +16,6 @@ void times_table(void)
 	{
 		for (b = 0; b <= 9; b++)
 		{
-			_putchar('\n');
-
 			int zero = a * b;
 
 			if (zero < 10)
