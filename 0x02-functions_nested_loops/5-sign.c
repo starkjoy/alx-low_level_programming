@@ -11,7 +11,8 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		return (1)(+);
+		signed char r = (int) '+1'; 
+		return (r);
 	}
 
 	if (n == 0)
