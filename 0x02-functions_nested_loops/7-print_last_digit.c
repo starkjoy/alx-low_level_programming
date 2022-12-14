@@ -13,14 +13,11 @@
 
 int print_last_digit(int i)
 {	
-	if((i / 1) != i)
-	{
-		_putchar(i);
-	}
-	else
-	{
-		i = abs(i) % 10;
-		_putchar(i + '0');
-	}
+	i = abs(i) % 10;
+	_putchar(i + '0');
+
+	if ( i == '(')
+		_putchar('8');
+
 	return (i);
 }
