@@ -3,7 +3,6 @@
 /**
  * main - tests if function works right
  * Return: returns 0
- *
  */
 
 int main(void)
