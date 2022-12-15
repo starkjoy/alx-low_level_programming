@@ -2,7 +2,6 @@
 
 /**
  * main - tests if function works right
- * Description: checks if the function is working right
  * Return: returns 0
  */
 
