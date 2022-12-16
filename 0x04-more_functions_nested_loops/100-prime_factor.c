@@ -8,9 +8,9 @@
 
 int main(void)
 {
-	long long num = 612852475143;
-	long long largest_factor = 1;
-	long long i;
+	unsigned long num = 612852475143;
+	unsigned long largest_factor = 1;
+	unsigned long i;
 
 
 	for (i = 2; i <= num / i; i++)
@@ -28,7 +28,7 @@ int main(void)
 	{
 		largest_factor = num;
 	}
-	printf("%lld\n", largest_factor);
+	printf("%lu\n", largest_factor);
 
 	return (0);
 }
