@@ -2,13 +2,13 @@
 #include "main.h"
 
 /**
- * print_line - draws a straight line
+ * print_diagonal - draws a straight line
  * Description: draws a line
  * @n: accepts integer Characters
  * Return: void
  */
 
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int i;
 	int j;
