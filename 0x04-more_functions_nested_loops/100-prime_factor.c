@@ -8,8 +8,8 @@
 
 int main(void)
 {
-	long long  num = 612852475143;
-	long long  largest_factor = 1;
+	long long num = 612852475143;
+	long long largest_factor = 1;
 	long long i;
 
 
