@@ -18,7 +18,7 @@ int main(void)
 			printf("Fizz");
 			putchar(' ');
 		}
-		else if (i % 5 == 0)
+		else if (i != 100 && i % 5 == 0)
 		{
 			printf("Buzz");
 			putchar(' ');
@@ -28,8 +28,12 @@ int main(void)
 			printf("%i", i);
 			putchar(' ');
 		}
+		if (i == 100)
+		{
+			printf("Buzz");
+			putchar('\n');
+		}
 	}
-	putchar('\n');
 
 	return (0);
 }
