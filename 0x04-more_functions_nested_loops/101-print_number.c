@@ -3,9 +3,9 @@
 
 /**
  * print_number - prints an integer
- * Description: It returns 1 for uppercase or 0 for non uppercase
+ * Description: It prints an integer using putchar
  * @n: accepts integer
- * Return: 0
+ * Return:void
  */
 
 void print_number(int n)
