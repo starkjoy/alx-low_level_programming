@@ -27,14 +27,16 @@ int main(void)
 			printf("FizzBuzz");
 			printf(" ");
 		}
-		else
+		else if (i != 100)
 		{
 			printf("%i", i);
-			if (i == 100)
-				continue;
 			printf(" ");
 		}
-		printf("\n");
+		else if (i == 100 && i % 5 == 0)
+		{
+			printf("Buzz");
+			printf("\n");
+		}
 	}
 
 	return (0);
