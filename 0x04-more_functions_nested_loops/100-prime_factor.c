@@ -28,6 +28,7 @@ int main(void)
 	{
 		largest_factor = num;
 	}
+	printf("%lld\n", largest_factor);
 
-	return (largest_factor);
+	return (0);
 }
