@@ -1,5 +1,5 @@
 int _isupper(int c);
-void _putchar(void);
+void _putchar();
 int _isdigit(int c);
 int mul(int a, int b);
 void print_numbers(void);
