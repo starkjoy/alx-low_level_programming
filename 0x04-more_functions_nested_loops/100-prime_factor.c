@@ -8,9 +8,9 @@
 
 int main(void)
 {
-	long long int num = 612852475143;
-	long long int largest_factor = 1;
-	long long int i;
+	long long  num = 612852475143;
+	long long  largest_factor = 1;
+	long long i;
 
 
 	for (i = 2; i <= num / i; i++)
