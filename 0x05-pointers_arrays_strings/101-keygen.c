@@ -17,7 +17,9 @@ int main(void)
 
 	srand(time(NULL));
 
-	for (int i = 0; i < 100; i++)
+	int i;
+
+	for (i = 0; i < 100; i++)
 	{
 		password[i] = generate_random_char();
 	}
