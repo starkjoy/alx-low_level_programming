@@ -18,7 +18,7 @@ int main(void)
 
 	srand(time(NULL));
 
-	for (i = 0; i < 100; i++)
+	for (i = 0; i < 10; i++)
 	{
 		password[i] = generate_random_char();
 	}
@@ -47,7 +47,7 @@ char generate_random_char(void)
 	{
 		return ('0' + (r - 52));
 	}
-	else if (r < 70);
+	else
 	{
 		char symbols[] = "!@#$^&*?";
 		r = rand() % (sizeof(symbols) - 1);
