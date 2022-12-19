@@ -13,14 +13,16 @@ int main(void)
 {
 	int i = 0;
 	int randomizer = 0;
+	unsigned int seed;
 
-	srand((unsigned int seed)(time(NULL)));
+	srand((seed)(time(NULL)));
 
 	char numbers[] = "0123456789";
 	char letter[] = "abcdefghijklmnopqrstuvwxyz";
 	char LETTER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char symbols[] = "!@#$^&*?";
-	char password[N];
+	char password[];
+
 	randomizer = rand() % 4;
 
 	for (i = 0; i < N; i++)
