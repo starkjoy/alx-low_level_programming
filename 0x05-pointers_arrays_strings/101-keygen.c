@@ -33,7 +33,7 @@ int main(void)
 
 char generate_random_char(void)
 {
-	int r = rand() % 62;
+	int r = rand() % 70;
 
 	if (r < 26)
 	{
@@ -43,8 +43,14 @@ char generate_random_char(void)
 	{
 		return ('A' + (r - 26));
 	}
-	else
+	else if (r < 62)
 	{
 		return ('0' + (r - 52));
+	}
+	else if (r < 70);
+	{
+		char symbols[] = "!@#$^&*?";
+		r = rand() % (sizeof(symbols) - 1);
+		return symbols[r];
 	}
 }
