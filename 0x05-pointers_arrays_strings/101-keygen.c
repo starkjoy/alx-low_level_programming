@@ -14,10 +14,9 @@ char generate_random_char(void);
 int main(void)
 {
 	char password[100];
+	int i;
 
 	srand(time(NULL));
-
-	int i;
 
 	for (i = 0; i < 100; i++)
 	{
