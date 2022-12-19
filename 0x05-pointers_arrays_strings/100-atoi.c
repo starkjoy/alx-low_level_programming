@@ -28,5 +28,5 @@ int _atoi(char *s)
             return INT_MIN;
         s++;
     }
-    return (total);
+    return (sign * total);
 }
