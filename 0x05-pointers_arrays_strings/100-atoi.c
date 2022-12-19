@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 
 /**
  * _atoi - a function that converts string to integer
@@ -26,5 +27,5 @@ int _atoi(char *s)
             return INT_MIN;
         s++;
     }
-    return (
+    return (total);
 }
