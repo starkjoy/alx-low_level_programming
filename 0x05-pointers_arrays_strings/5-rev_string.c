@@ -18,6 +18,6 @@ void rev_string(char *s)
 	}
 	for (l -= 1; l >= 0; l--)
 	{
-		putchar(s);
+		putchar(s[l]);
 	}
 }
