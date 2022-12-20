@@ -13,7 +13,7 @@ int _strlen(char *s)
 	int char_length;
 	char str_text;
 
-	*s = str_text;
+	str_text = *s;
 	char_length = strlen(str_text);
 
 	return char_length;
