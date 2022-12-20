@@ -16,7 +16,7 @@ void rev_string(char *s)
 
 	for (l -= 1; l >= 0; l--)
 	{
-		crt = putchar(s[l]);
+		*crt = putchar(s[l]);
 	}
 	puts(crt);
 }
