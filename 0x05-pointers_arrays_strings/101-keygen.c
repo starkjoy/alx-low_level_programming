@@ -14,7 +14,7 @@ void generate_random_char(int N)
 	int i;
 	int randomizer;
 
-	srand(time);
+	srand(time(0));
 
 	char numbers[] = "0123456789";
 	char letter[] = "abcdefghijklmnopqrstuvwxyz";
