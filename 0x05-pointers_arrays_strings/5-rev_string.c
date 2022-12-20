@@ -16,6 +16,6 @@ void rev_string(char *s)
 	{
 		char crt;
 		crt = putchar(s[l]);
+		*s = crt;
 	}
-	*s = crt;
 }
