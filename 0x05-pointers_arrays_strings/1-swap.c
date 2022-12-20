@@ -10,9 +10,6 @@
 
 void swap_int(int *a, int *b)
 {
-	int d;
-	int c;
-
-	a = &d;
-	b = &c;
+	*a = 6;
+	*b = 5;
 }
