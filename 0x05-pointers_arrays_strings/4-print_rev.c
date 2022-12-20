@@ -10,24 +10,17 @@
 
 void print_rev(char *s)
 {
-	int length;
-	int start;
-	int end;
-	char temp;
+	char *len = s;
 
-	length = strlen(s);
-	start = 0;
-	end = length - 1;
-
-	while (start < end)
+	while (*len)
 	{
-		temp = s[start];
-		s[start] = s[end];
-		s[end] = temp;
-
-		start++;
-		end--;
+		len++
 	}
-	puts(s);
+	len = len - 1;
+	while (len)
+	{
+		putchar(*s);
+		s--;
+	}
 	putchar('\n');
 }
