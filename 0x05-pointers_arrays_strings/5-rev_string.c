@@ -12,8 +12,8 @@ void rev_string(char *s)
 {
 	int l = strlen(s);
 
-	for (l -= 1; l >= 0; l--)
+	while (l-1)
 	{
-		printf("%c",s[l]);
+		l--;
 	}
 }
