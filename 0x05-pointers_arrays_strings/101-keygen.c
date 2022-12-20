@@ -23,7 +23,7 @@ void generate_random_char(void)
 
 	srand(time(0));
 
-	N = rand() % 10 + 1;
+	N = 10;
 
 	randomizer = rand() % 4;
 
