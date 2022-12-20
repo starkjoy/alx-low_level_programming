@@ -10,8 +10,11 @@
 
 void swap_int(int *a, int *b)
 {
-	int mirror;
-
-	mirror = *a;
-	*b = mirror;
+	int mirror1;
+	int mirror2;
+	
+	*a = mirror1;
+	*b = mirror2;
+	mirror2 = *a;
+	mirror1 = *b;
 }
