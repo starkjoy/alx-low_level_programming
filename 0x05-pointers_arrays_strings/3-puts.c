@@ -10,8 +10,5 @@
 
 void _puts(char *str)
 {
-	int strings;
-
-	strings = *str;
-	puts(strings);
+	puts(str);
 }
