@@ -13,6 +13,7 @@ void print_rev(char *s)
 	int length;
 	int start;
 	int end;
+	char temp;
 
 	length = strlen(s);
 	start = 0;
@@ -20,8 +21,6 @@ void print_rev(char *s)
 
 	while (start < end)
 	{
-		char temp;
-
 		temp = s[start];
 		s[start] = s[end];
 		s[end] = temp;
