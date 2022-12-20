@@ -9,7 +9,7 @@
  * Return: void
 */
 
-void generate_random_char(int N);
+void generate_random_char(int N)
 {
 	int i;
 	int randomizer;
