@@ -15,6 +15,6 @@ void swap_int(int *a, int *b)
 	
 	mirror1 = *a;
 	mirror2 = *b;
-	mirror2 = *a;
-	mirror1 = *b;
+	*a = mirror2;
+	*b = mirror1;
 }
