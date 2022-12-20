@@ -9,10 +9,11 @@
  * Return: void
 */
 
-void generate_random_char(int N)
+void generate_random_char(void)
 {
 	int i;
 	int randomizer;
+	int N;
 
 	char numbers[] = "0123456789";
 	char letter[] = "abcdefghijklmnopqrstuvwxyz";
@@ -21,6 +22,8 @@ void generate_random_char(int N)
 	char password[100];
 
 	srand(time(0));
+
+	N = rand() % 100;
 
 	randomizer = rand() % 4;
 
