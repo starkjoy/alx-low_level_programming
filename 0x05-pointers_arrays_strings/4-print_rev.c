@@ -29,4 +29,5 @@ void print_rev(char *s)
 		start++;
 		end--;
 	}
+	return (s);
 }
