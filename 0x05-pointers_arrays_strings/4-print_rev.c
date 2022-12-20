@@ -24,11 +24,9 @@ void print_rev(char *s)
 		temp = s[start];
 		s[start] = s[end];
 		s[end] = temp;
-
-		puts(s);
-
 		start++;
 		end--;
+
+		temp = s;
 	}
-	return;
 }
