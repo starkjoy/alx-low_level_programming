@@ -52,3 +52,10 @@ void generate_random_char(int N)
 		}
 	}
 }
+
+int main(void)
+{
+	generate_random_char();
+
+	return (0);
+}
