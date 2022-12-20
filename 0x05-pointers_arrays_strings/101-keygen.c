@@ -14,13 +14,13 @@ void generate_random_char(int N)
 	int i;
 	int randomizer;
 
-	srand(time(0));
-
 	char numbers[] = "0123456789";
 	char letter[] = "abcdefghijklmnopqrstuvwxyz";
 	char LETTER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char symbols[] = "!@#$^&*?";
 	char password[N];
+
+	srand(time(0));
 
 	randomizer = rand() % 4;
 
@@ -42,7 +42,7 @@ void generate_random_char(int N)
 		{
 			password[i] = LETTER[rand() % 26];
 			randomizer = rand() % 4;
-			prinf("%c", password[i]);
+			printf("%c", password[i]);
 		}
 		else
 		{
