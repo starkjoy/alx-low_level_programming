@@ -9,7 +9,7 @@
  * Return: void
 */
 
-void generate_random_char(N);
+void generate_random_char(int N);
 {
 	int i;
 	int randomizer;
@@ -51,3 +51,4 @@ void generate_random_char(N);
 			printf("%c", password[i]);
 		}
 	}
+}
