@@ -12,7 +12,7 @@ void swap_int(int *a, int *b)
 {
 	int mirror;
 
-	*a = mirror;
+	mirror = *a;
 	*b = *a;
 	*b = mirror;
 }
