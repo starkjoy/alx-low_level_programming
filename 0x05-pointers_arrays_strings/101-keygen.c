@@ -18,7 +18,7 @@ void generate_random_char(int N)
 	char letter[] = "abcdefghijklmnopqrstuvwxyz";
 	char LETTER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char symbols[] = "!@#$^&*?";
-	char password[N];
+	char password[100];
 
 	srand(time(0));
 
