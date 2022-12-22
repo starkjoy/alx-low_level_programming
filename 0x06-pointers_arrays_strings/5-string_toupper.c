@@ -12,13 +12,11 @@
 char *string_toupper(char *c)
 {
 	int char_count = 0;
-	char character;
 	char *result;
 
 	while (c[char_count])
 	{
-		character = c[char_count];
-		result = toupper(character);
+		result = toupper(c[char_count]);
 		char_count++;
 	}
 	return (result);
