@@ -10,7 +10,7 @@
 
 char *leet(char *c)
 {
-	char *result;
+	char result;
 	int i;
 	int j;
 	
