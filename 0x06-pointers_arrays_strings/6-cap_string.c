@@ -10,7 +10,7 @@
 
 char *cap_string(char *c)
 {
-	char *result;
+	char *result = c
 	int i;
 	
 	int length = strlen(c);
@@ -19,7 +19,7 @@ char *cap_string(char *c)
 	{
 		if (i == 0 || isspace(c[i - 1]))
 		{
-			result = toupper(c[i]);
+			*c = toupper(*c[i]);
 		}
 	}
 
