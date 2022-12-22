@@ -13,6 +13,6 @@ void reverse_array(int *a, int n)
 {
 	for (n -= 1; n >= 0; n--)
 	{
-		putchar(a[n]);
+		printf("%i", a[n]);
 	}
 }
