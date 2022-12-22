@@ -7,6 +7,7 @@
  * @dest: accepts string
  * @src: accepts string
  * @n: accepts integer values
+ * Return: returns char pointer
  */
 
 char *_strncat(char *dest, char *src, int n)
