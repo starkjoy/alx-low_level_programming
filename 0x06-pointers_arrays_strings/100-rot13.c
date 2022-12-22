@@ -3,9 +3,10 @@
 #include <ctype.h>
 
 /**
- * *cap_string - Makes sentence capitalize
+ * *rot13 - Makes sentence capitalize
  * Description: Capitalizes sentences
  * @c: accepts string
+ * Return: returns a pointer
  */
 
 char *rot13(char *c)
