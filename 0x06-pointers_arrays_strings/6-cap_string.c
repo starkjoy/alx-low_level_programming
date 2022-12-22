@@ -10,7 +10,7 @@
 
 char *cap_string(char *c)
 {
-	char *result = c
+	char *result = c;
 	int i;
 	
 	int length = strlen(c);
