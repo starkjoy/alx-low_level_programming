@@ -3,54 +3,62 @@
 #include <time.h>
 
 /**
- * main - Program Entry
  * generate_random_char - generates random number
  * Description: Generates random valid passwords for program 101-crackme.
- * Return: 0
+ * @N: accepts an integer
+ * Return: void
 */
 
-char generate_random_char(void);
+void generate_random_char(void)
+{
+	int i;
+	int randomizer;
+	int N;
+
+	char numbers[] = "0123456789";
+	char letter[] = "abcdefghijklmnopqrstuvwxyz";
+	char LETTER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char symbols[] = "!@#$^&*?";
+	char password[100];
+
+	srand(time(0));
+
+	N = rand() % 20;
+
+	randomizer = rand() % 4;
+
+	for (i = 0; i < N; i++)
+	{
+		if (randomizer == 1)
+		{
+			password[i] = numbers[rand() % 10];
+			randomizer = rand() % 4;
+			printf("%c", password[i]);
+		}
+		else if (randomizer == 2)
+		{
+			password[i] = symbols[rand() % 8];
+			randomizer = rand() % 4;
+			printf("%c", password[i]);
+		}
+		else if (randomizer == 3)
+		{
+			password[i] = LETTER[rand() % 26];
+			randomizer = rand() % 4;
+			printf("%c", password[i]);
+		}
+		else
+		{
+			password[i] = letter[rand() % 26];
+			randomizer = rand()% 4;
+			printf("%c", password[i]);
+		}
+	}
+}
 
 int main(void)
 {
-	char password[100];
-	int i;
-
-	srand(time(NULL));
-
-	for (i = 0; i < 15; i++)
-	{
-		password[i] = generate_random_char();
-	}
-
-	password[99] = '\0';
-
-	printf("%s\n", password);
+	generate_random_char();
 
 	return (0);
-
-}
-
-char generate_random_char(void)
-{
-	int r = rand() % 70;
-
-	if (r < 26)
-	{
-		return ('a' + r);
-	}
-	else if (r < 52)
-	{
-		return ('A' + (r - 26));
-	}
-	else if (r < 62)
-	{
-		return ('0' + (r - 52));
-	}
-	else
-	{
-		char symbols[] = "!@#$^&*?";
-		r = rand() % (sizeof(symbols) - 1);
-		return symbols[r];
-	}
 }
