@@ -6,6 +6,7 @@
  * Description: Adds text to other text
  * @s1: accepts string
  * @s2: accepts string
+ * Return: returns integer
  */
 
 int _strcmp(char *s1, char *s2)
