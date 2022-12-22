@@ -30,5 +30,5 @@ char *leet(char *c)
 		}
 	}	
 
-	return (*result);
+	return (result);
 }
