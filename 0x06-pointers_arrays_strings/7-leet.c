@@ -6,13 +6,14 @@
  * *leet - encodes letters to numbers
  * Description: encodes sentences into leet
  * @c: accepts strings
+ * Return: returns char pointer
  */
 
 char *leet(char *c)
 {
 	int i;
 	int j;
-	
+
 	int length = strlen(c);
 
 	for (i = 0; i < length; i++)
@@ -26,7 +27,6 @@ char *leet(char *c)
 				c[i] = "43071"[j];
 			}
 		}
-	}	
-
-	return c;
+	}
+	return (c);
 }
