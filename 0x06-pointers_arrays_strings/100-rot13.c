@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- * *rot13 - Makes sentence capitalize
+ * rot13 - encode a string in rot-13
  * Description: Capitalizes sentences
  * @c: accepts string
  * Return: returns a pointer
