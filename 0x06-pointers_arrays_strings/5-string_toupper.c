@@ -11,13 +11,13 @@
 
 char *string_toupper(char *c)
 {
-	char *result = c;
+	int char_count = 0;
+	char *result;
 
-	while (c)
+	while (c[char_count])
 	{
-		if (*s >= 'a' && *s <= 'z')
-			*c -= 32;
-		c++;
+		result = toupper(c[char_count]);
+		char_count++;
 	}
 	return (result);
 }
