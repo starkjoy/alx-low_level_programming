@@ -17,7 +17,7 @@ char *rot13(char *c)
 	{
 		if (isalpha(c[i]))
 		{
-			if (islower(s[i]))
+			if (islower(c[i]))
 			{
 				c[i] = (c[i] - 'a' + 13) % 26 + 'a';
 			}
