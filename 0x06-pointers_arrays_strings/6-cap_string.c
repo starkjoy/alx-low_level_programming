@@ -17,7 +17,7 @@ char *cap_string(char *c)
 
 	for (i = 0; i < length; i++)
 	{
-		if (i == 0 || isspace(c[i - 1]))
+		if (i == 0 || isspace(c[i - 1] || c[i - 1] == '.'))
 		{
 			*c = toupper(c[i]);
 		}
