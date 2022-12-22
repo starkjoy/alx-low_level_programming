@@ -11,7 +11,7 @@
 
 char *string_toupper(char *c)
 {
-	char *result = c
+	char *result = c;
 
 	while (*c)
 	{
