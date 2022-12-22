@@ -7,6 +7,7 @@
  * @dest: accepts string
  * @src: accepts string
  * @n: accepts integer values
+ * Return: returns char pointer
  */
 
 char *_strncpy(char *dest, char *src, int n)
@@ -15,5 +16,5 @@ char *_strncpy(char *dest, char *src, int n)
 
 	result = strncpy(dest, src, n);
 
-	return (*result);
+	return (result);
 }
