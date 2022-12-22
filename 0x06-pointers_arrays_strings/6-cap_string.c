@@ -19,7 +19,7 @@ char *cap_string(char *c)
 	{
 		if (i == 0 || isspace(c[i - 1]))
 		{
-			*c = toupper(*c[i]);
+			*c = toupper(c[i]);
 		}
 	}
 
