@@ -15,12 +15,12 @@ char *rot13(char *c)
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
-		if (islower(c[i]))
+		if (isalpha(c[i]))
 		{
-			c[i] = (c[i] - 'a' + 13) % 26 + 'a';
-		}
-		else if (isupper(c[i]))
-		{
+			while (c[i] > 'Z' && c[i] < 'a' || c[i] > 'z')
+			{
+				c[i] -= 26;
+			}
 			c[i] = (c[i] - 'A' + 13) % 26 + 'A';
 		}
 	}
