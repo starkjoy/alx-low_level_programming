@@ -21,5 +21,5 @@ char *string_toupper(char *c)
 		result = toupper(character);
 		char_count++;
 	}
-	return (*result);
+	return (result);
 }
