@@ -10,7 +10,7 @@
 
 char *leet(char *c)
 {
-	char *result;
+	char *result = c;
 	int i;
 	int j;
 	
@@ -24,7 +24,7 @@ char *leet(char *c)
 		{
 			if (s == "aeotl"[j] || s == "AEOTL"[j])
 			{
-				*c[i] = "43071"[j];
+				c[i] = "43071"[j];
 				result = *c[i];
 			}
 		}
