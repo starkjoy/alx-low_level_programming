@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include "main.h"
 
 /**
  * _strcat - appends to existing string
@@ -15,5 +16,5 @@ char *_strcat(char *dest, char *src)
 
 	result = strcat(dest, src);
 
-	return (*result);
+	return (result);
 }
