@@ -17,7 +17,7 @@ char *rot13(char *c)
 	{
 		if (isalpha(c[i]))
 		{
-			while (c[i] > 'Z' && c[i] < 'a' || c[i] > 'z')
+			while ((c[i] > 'Z' && c[i] < 'a)' || c[i] > 'z')
 			{
 				c[i] -= 26;
 			}
