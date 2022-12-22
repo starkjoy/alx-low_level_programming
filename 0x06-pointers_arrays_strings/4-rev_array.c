@@ -15,5 +15,10 @@ void reverse_array(int *a, int n)
 	for (n -= 1; n >= 0; n--)
 	{
 		printf("%i", a[n]);
+		if (n != 0)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 }
