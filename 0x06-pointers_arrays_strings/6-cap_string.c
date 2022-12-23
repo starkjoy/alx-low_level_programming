@@ -11,15 +11,15 @@
 
 char *cap_string(char *c)
 {
-	int idx = 0;
+	int i = 0;
 
-	while (c[idx])
+	while (c[i])
 	{
-		if (idx == 0 || isspace(c[idx - 1]) || (c[idx - 1] != '-' && ispunct(c[idx - 1])))
+		if (i == 0 || isspace(c[i - 1]) || (c[i - 1] != '-' && ispunct(c[i - 1])))
 		{
-			c[idx] = toupper(c[idx]);
+			c[i] = toupper(c[i]);
 		}
-		idx++;
+		i++;
 	}
 	return (c);
 }
