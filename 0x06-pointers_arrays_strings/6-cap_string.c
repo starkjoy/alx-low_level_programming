@@ -14,12 +14,12 @@ char *cap_string(char *c)
 
 	while (c[idx])
 	{
-		if (idx == 0 || ispace(c[idx - 1]) || ispunct(c[idx - 1]))
+		if (idx == 0 || isspace(c[idx - 1]) || ispunct(c[idx - 1]))
 		{
 			c[idx] = toupper(c[idx]);
 		}
 		idx++;
 	}
-
+	
 	return (c);
 }
