@@ -6,6 +6,7 @@
  * *cap_string - Makes sentence capitalize
  * Description: Capitalizes sentences
  * @c: accepts string
+ * Return: returns void
  */
 
 char *cap_string(char *c)
@@ -20,6 +21,5 @@ char *cap_string(char *c)
 		}
 		idx++;
 	}
-	
 	return (c);
 }
