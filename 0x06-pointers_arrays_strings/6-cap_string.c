@@ -10,18 +10,16 @@
 
 char *cap_string(char *c)
 {
-	char *result = c;
-	int i;
-	
-	int length = strlen(c);
+	int idx = 0;
 
-	for (i = 0; i < length; i++)
+	while (c[idx])
 	{
-		if (i == 0 || isspace(c[i - 1] || c[i - 1] == '.'))
+		if (idx == 0 || ispace(c[idx - 1]) || ispunct(c[idx - 1]))
 		{
-			*c = toupper(c[i]);
+			c[idx] = toupper(c[idx]);
 		}
+		idx++;
 	}
 
-	return (result);
+	return (c);
 }
