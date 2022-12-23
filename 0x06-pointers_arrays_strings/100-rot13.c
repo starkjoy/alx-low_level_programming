@@ -9,23 +9,30 @@
  * Return: returns a pointer
  */
 
-char *rot13(char *c)
+char *rot13(char *c) 
 {
-	int i;
+  int i = 0;
+  int len = strlen(c);
+  
+  char alp[] = "abcdefghijklmnopqrstuvwxyz";
+  char rot[] = "nopqrstuvwxyzabcdefghijklm";
+  char Alp[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  char Rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLM";
+  
+  while (i < len) 
+  {
+    char ch = c[i];
+    
+    if (ch >= 'a' && ch <= 'z') 
+    {
+      c[i] = rot[ch - 'a'];
+    } 
+    else if (ch >= 'A' && ch <= 'Z')
+    {
+      c[i] = Rot[ch - 'A'];
+    }
+    i++;
+  }
 
-	for (i = 0; c[i] != '\0'; i++)
-	{
-		while (isalpha(c))
-		{
-			if (islower(c))
-			{
-				c[i] = (c[i] - 'a' + 13) % 26 + 'a';
-			}
-			else
-			{
-				c[i] = (c[i] - 'A' + 13) % 26 + 'A';
-			}
-		}
-	}
-	return (c);
+  return c;
 }
