@@ -10,7 +10,7 @@
 
 void print_number(int n)
 {
-	if (!(isalpha(n)))
+	if (sizeof(n) != sizeof(char))
 	{
 		if (n < 0)
 		{
