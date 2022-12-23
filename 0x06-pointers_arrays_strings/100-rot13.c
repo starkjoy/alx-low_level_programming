@@ -14,9 +14,7 @@ char *rot13(char *c)
   int i = 0;
   int len = strlen(c);
   
-  char alp[] = "abcdefghijklmnopqrstuvwxyz";
   char rot[] = "nopqrstuvwxyzabcdefghijklm";
-  char Alp[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   char Rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLM";
   
   while (i < len) 
