@@ -10,7 +10,7 @@ int main(void)
 {
 	long int x1 = 1;
 	long int x2 = 1;
-	long int x3 = 2;
+	long int x3 = 1;
 	int counter = 0;
 
 	while (counter < 50)
