@@ -13,7 +13,7 @@ int main(void)
 	unsigned int x3 = 2;
 	int counter = 0;
 
-	while (x3 < 50)
+	while (counter < 50)
 	{
 		printf("%u, ", x3);
 		x3 = x1 + x2;
