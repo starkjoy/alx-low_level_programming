@@ -15,7 +15,12 @@ int main(void)
 
 	while (counter < 50)
 	{
-		printf("%ld, ", x3);
+		printf("%ld", x3);
+		if (!(counter == 49))
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		x3 = x1 + x2;
 		x1 = x2;
 		x2 = x3;
