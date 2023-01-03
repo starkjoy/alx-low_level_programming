@@ -30,6 +30,6 @@ void print_diagsums(int *a, int size)
 			}
 		}
 	}
-	printf("%d ", ans);
+	printf("%d, ", ans);
 	printf("%d\n", ans1);
 }
