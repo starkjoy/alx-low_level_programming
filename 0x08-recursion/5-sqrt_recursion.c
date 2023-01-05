@@ -10,24 +10,19 @@
 int _sqrt_recursion(int n)
 {
 
-	if (n < 0)
+	if (n == 0 || n == 1)
 	{
-		return (-1);
+		return n;
 	}
-	else if ( n == 0 || n == 1)
+
+	int guess = _sqrt_recursion(n - 1);
+
+	if (guess * guess == n)
 	{
-		return (n);
+		return guess;
 	}
 	else
 	{
-		int i = 1;
-		int result = 1;
-
-		while (result <= n)
-		{
-			i++;
-			result = i * i;
-		}
-		return (_sqrt_recursion(n - result + i));
+		return guess + 1;
 	}
 }
