@@ -22,7 +22,7 @@ int _sqrt_recursion(int n)
 	{
 		return (prev);
 	}
-	result = _sqrt(n + prev + 1);
+	result = _sqrt_recursion(n + prev + 1);
 	if (result == -1)
 	{
 		return (-1);
