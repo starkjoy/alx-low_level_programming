@@ -9,21 +9,15 @@
 
 int _sqrt_recursion(int n)
 {
-	int guess;
+	int prev = 1;
 
-	if (n == 0 || n == 1)
+	if (prev * prev == n)
 	{
-		return n;
+		return prev;
 	}
-
-	guess = _sqrt_recursion(n - 1);
-
-	if (guess * guess == n)
+	else if (prev > n / prev)
 	{
-		return guess;
+		return -1;
 	}
-	else
-	{
-		return guess + 1;
-	}
+	return _sqrt(n, prev + 1);
 }
