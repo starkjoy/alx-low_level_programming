@@ -9,15 +9,23 @@
 
 int _sqrt_recursion(int n)
 {
-	int prev = 1;
+	int prev;
+	int result;
 
+	if (n < 0)
+	{
+
+		return (-1);
+	}
+	prev = 1;
 	if (prev * prev == n)
 	{
-		return prev;
+		return (prev);
 	}
-	else if (prev > n / prev)
+	result = _sqrt(n + prev + 1);
+	if (result == -1)
 	{
-		return -1;
+		return (-1);
 	}
-	return _sqrt_recursion(n, prev + 1);
+	return (result);
 }
