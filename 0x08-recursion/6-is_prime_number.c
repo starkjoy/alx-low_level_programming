@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-int check_prime(int n, int i);
-
 /**
  * _is_prime_number - returns 1 if the integer is prime
  * Description: returns 1 for a prime numer
@@ -11,30 +9,19 @@ int check_prime(int n, int i);
 
 int _is_prime_number(int n)
 {
-	return (check_prime(n, 1));
-}
+	int pri = 0;
 
-/**
- * check_prime -Check if number is prime
- * @n: the prime to be checked
- * @i: the iteration times
- *
- * Return: 1 for prime or 0 composite
- */
-
-int check_prime(int n, int i)
-{
-	if (n <= 1)
+	if (n < 2)
 	{
-		return (0);
+		pri = 0;
 	}
-	if (n % i == 0 && i > 1)
+	else if (n == 2)
 	{
-		return (1);
+		pri = 1;
 	}
-	if ((n / i) < i)
+	else if (n % 2 == 1)
 	{
-		return (1);
+		pri = 1;
 	}
-	return (check_prime(n, i + 1));
+	return (pri);
 }
