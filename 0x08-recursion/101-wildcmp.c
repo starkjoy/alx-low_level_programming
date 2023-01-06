@@ -3,7 +3,7 @@
 /**
  * wildcmp - compares two strings
  * @s1: accepts a string array
- * @a2: accepts a string  array
+ * @s2: accepts a string  array
  * Return: returns an integer
  */
 
