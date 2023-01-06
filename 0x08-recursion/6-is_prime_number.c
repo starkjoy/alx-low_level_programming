@@ -7,7 +7,7 @@
  * Return: returns an integer
  */
 
-int _is_prime_number(int n)
+int is_prime_number(int n)
 {
 	int pri = 0;
 
