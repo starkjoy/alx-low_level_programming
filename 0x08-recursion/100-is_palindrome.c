@@ -22,10 +22,10 @@ int palrec(char *s, int l, int r)
 		return (0);
 	}
 
-	return palrec(s, l + 1, r - 1);
+	return (palrec(s, l + 1, r - 1));
 }
 
-/** 
+/**
  * is_palindrome - returns 1 if a string is palindrome and 0 for the inverse
  * Description: returns 1 if string is palindrome and 0 for the opposite
  * @s: accepts an array
