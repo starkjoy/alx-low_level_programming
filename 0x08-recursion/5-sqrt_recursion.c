@@ -28,7 +28,7 @@ int _sqrt(int n, int i)
 
 	if (sqrt > n)
 	{
-		retun (-1);
+		return (-1);
 	}
 	if (sqrt == n)
 	{
