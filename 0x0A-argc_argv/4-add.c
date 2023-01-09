@@ -17,6 +17,7 @@ int isNumeric(const char *str)
 		}
 		str++;
 	}
+	return (1);
 }
 
 /**
