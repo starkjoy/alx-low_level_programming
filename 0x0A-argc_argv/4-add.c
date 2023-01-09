@@ -11,38 +11,22 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
-	int result = 0;
+	int count = 1;
+	int mat = 0;
 
-	if (argc < 1)
+	while (count < argc)
 	{
-		printf("0\n");
-	}
-
-	if (argc < 2 )
-	{
-		printf("%i\n", atoi(argv[1]));
-	}
-	else
-	{
-
-		for (i = 1; i < argc; i++)
+		if (isdigit(argv[count]) == 0)
 		{
-			if (isdigit(argv[i]))
-			{
-				int value = atoi(argv[i]);
-
-				result = result + value;
-			}
-			else
-			{
-				printf("Error\n");
-
-				return (1);
-			}
+			printf("Error\n");
+			return (1);
 		}
 
-	printf("%i\n", result);
+		mat = mat + atoi(argv[count]);
+		count++;
+	}
+
+	printf("%i\n", mat);
 
 	return (0);
 }
