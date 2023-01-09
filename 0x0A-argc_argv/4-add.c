@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 
 	int res = 0;
 
-	while (argc > 1)
+	while (argc-- > 1)
 	{
 		for (i = 0; i < argc; i++)
 		{
@@ -26,11 +26,9 @@ int main(int argc, char *argv[])
 
 				return (1);
 			}
-			else
-			{
-				num = atoi(argv[i]);
-				res = res + num;
-			}
+
+			num = atoi(argv[i]);
+			res = res + num;
 		}
 
 	}
