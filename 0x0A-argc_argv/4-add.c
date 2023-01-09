@@ -11,22 +11,31 @@
 
 int main(int argc, char *argv[])
 {
-	int count = 1;
-	int mat = 0;
+	int num;
+	int i;
 
-	while (count < argc)
+	int res = 0;
+
+	while (argc > 1)
 	{
-		if (isdigit(argv[count]) == 0)
+		for (i = 0; i < argc; i++)
 		{
-			printf("Error\n");
-			return (1);
+			if (!(isdigit(argv[i])))
+			{
+				printf("Errror\n");
+
+				return (1);
+			}
+			else
+			{
+				num = atoi(argv[i]);
+				res = res + num;
+			}
 		}
 
-		mat = mat + atoi(argv[count]);
-		count++;
 	}
 
-	printf("%i\n", mat);
+	printf("%i\n", res);
 
 	return (0);
 }
