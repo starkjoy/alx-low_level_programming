@@ -19,21 +19,29 @@ int main(int argc, char *argv[])
 		printf("0\n");
 	}
 
-	for (i = 1; i < argc; i++)
+	if (argc < 2 )
 	{
-		if (isdigit(argv[i]))
-		{
-			int value = atoi(argv[i]);
-
-			result = result + value;
-		}
-		else
-		{
-			printf("Error\n");
-
-			return (1);
-		}
+		printf("%i\n", atoi(argv[1]));
 	}
+	else
+	{
+
+		for (i = 1; i < argc; i++)
+		{
+			if (isdigit(argv[i]))
+			{
+				int value = atoi(argv[i]);
+
+				result = result + value;
+			}
+			else
+			{
+				printf("Error\n");
+
+				return (1);
+			}
+		}
+
 	printf("%i\n", result);
 
 	return (0);
