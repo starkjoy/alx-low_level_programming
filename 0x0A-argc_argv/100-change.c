@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 0; i < cent[5]; i++)
 		{
-			int c[5] = (atoi(argv[1])) \ (cent[i]);
+			int c[5] = atoi(argv[1])/cent[i];
 		}
 
 		if (c[0] <= c[1] && c[0] <= c[2] && c[0] <= c[3] && c[0] <= c[4])
@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 		{
 			printf("%i\n", c[2]);
 		}
-		else if (c[3] <= c[0] && c[3] <= c[1] && c[3] <= c[2] && c[3] <= c[4]);
+		else if (c[3] <= c[0] && c[3] <= c[1] && c[3] <= c[2] && c[3] <= c[4])
 		{
 			printf("%i\n", c[3]);
 		}
