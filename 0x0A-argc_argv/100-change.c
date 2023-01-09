@@ -11,6 +11,8 @@
 int main(int argc, char *argv[])
 {
 	int i;
+	int c[5];
+
 	int cent[] = {1, 2, 5, 10, 25};
 
 	if (argc != 1)
@@ -29,7 +31,11 @@ int main(int argc, char *argv[])
 	{
 		for (i = 0; i < cent[5]; i++)
 		{
-			int c[5] = atoi(argv[1])/cent[i];
+			c[0] = atoi(argv[1])/cent[0];
+			c[1] = atoi(argv[1])/cent[1];
+			c[2] = atoi(argv[1])/cent[2];
+			c[3] = atoi(argv[1])/cent[3];
+			c[4] = atoi(argv[1])/cent[4];
 		}
 
 		if (c[0] <= c[1] && c[0] <= c[2] && c[0] <= c[3] && c[0] <= c[4])
