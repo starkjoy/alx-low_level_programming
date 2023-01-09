@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - program entry
@@ -22,7 +23,7 @@ int main(int argc, char *argv[])
 	{
 		if (isdigit(argv[i]))
 		{
-			int value = argv[i];
+			int value = atoi(argv[i]);
 
 			result = result + value;
 		}
