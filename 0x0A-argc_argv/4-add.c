@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 /**
  * isNumeric - checks if a string is a number or not
  * @str: string to  be checked
- *
  * Return: 1
  */
 
