@@ -13,20 +13,27 @@ int main(int argc, char *argv[])
 	int i;
 	int result = 0;
 
-	if (argc < 2)
+	if (argc < 1)
 	{
 		printf("0\n");
 	}
 
 	for (i = 1; i < argc; i++)
 	{
-		int value = atoi(argv[i]);
-
-		if (value > 0)
+		if (isdigit(argv[i]))
 		{
+			int value = argv[i];
+
 			result = result + value;
 		}
-	}
+		else
+		{
+			printf("Error\n");
 
-	return (1);
+			return (1);
+		}
+	}
+	printf("%i\n", result);
+
+	return (0);
 }
