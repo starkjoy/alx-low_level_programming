@@ -13,12 +13,12 @@ int isNumeric(const char *str)
 {
 	while (*str != '\0')
 	{
-		for (*str = '0' *str < '9'; str++)
+		if (*str < '0' || *str > '9')
 		{
 			return (0);
 		}
+		str++;
 	}
-	return (1);
 }
 
 /**
