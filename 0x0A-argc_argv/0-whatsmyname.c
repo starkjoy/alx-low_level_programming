@@ -7,9 +7,9 @@
  * Return: return 0
  */
 
-int main(int argc, char **argv)
+int main(int argc, char* argv[])
 {
-	puts(argv[argc - 1);
+	printf("%s\n", argv[0]);
 
 	return (0);
 }
