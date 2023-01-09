@@ -3,6 +3,25 @@
 #include <ctype.h>
 
 /**
+ * isNumeric - checks if a string is a number or not
+ * @str: string to  be checked
+ *
+ * Return: 1
+ */
+
+int isNumeric(const char *str)
+{
+	while (*str != '\0')
+	{
+		for (*str = '0' *str < '9'; str++)
+		{
+			return (0);
+		}
+	}
+	return (1);
+}
+
+/**
  * main - program entry
  * @argc: accepts integer value
  * @argv: accepts pointer to char
@@ -11,29 +30,22 @@
 
 int main(int argc, char *argv[])
 {
-	int num;
-	int i;
+	int count = 1;
+	int mat = 0;
 
-	int res = 0;
-
-	while (argc-- > 1)
+	while (count < argc)
 	{
-		for (i = 0; i < argc; i++)
+		if (isNumeric(argv[count]) == 0)
 		{
-			if (!(isdigit(argv[i])))
-			{
-				printf("Error\n");
-
-				return (1);
-			}
-
-			num = atoi(argv[i]);
-			res = res + num;
+			printf("Error\n");
+			return (1);
 		}
 
+		mat = mat + atoi(argv[count]);
+		count++;
 	}
 
-	printf("%d\n", res);
+	printf("%i\n", mat);
 
 	return (0);
 }
