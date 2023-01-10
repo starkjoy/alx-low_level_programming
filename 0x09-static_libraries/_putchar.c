@@ -2,6 +2,6 @@
 
 int _putchar(char c)
 {
-    write(src, msg, msglen);
+    write();
     return (0);
 }
