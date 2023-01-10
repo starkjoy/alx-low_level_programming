@@ -1,6 +1,20 @@
-#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * _strncpy - appends to existing string
+ * Description: Adds text to other text
+ * @dest: accepts string
+ * @src: accepts string
+ * @n: accepts integer values
+ * Return: returns char pointer
+ */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-    return;
+	char *result;
+
+	result = strncpy(dest, src, n);
+
+	return (result);
 }

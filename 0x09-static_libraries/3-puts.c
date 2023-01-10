@@ -1,6 +1,14 @@
-#include "main.h"
+#include <stdio.h>
+#include <string.h>
 
-void _puts(char *s)
+/**
+ * _puts - prints a string
+ * Description: prints string
+ * @str: accepts a string
+ * Return: returns void
+ */
+
+void _puts(char *str)
 {
-	_putchar(s[0]);
+	puts(str);
 }

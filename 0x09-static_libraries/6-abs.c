@@ -1,6 +1,19 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
-int _abs(int n)
+/**
+ * _abs - printes absolutes of integers
+ * Description: it prints absolutes
+ * @i: accepts integers
+ *
+ * Return: returns 0
+ */
+
+int _abs(int i)
 {
-    return (0);
+	int x;
+
+	x = abs(i);
+
+	return (x);
 }
