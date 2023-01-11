@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * create_array: create a char array
+ * create_array - create a char array
  * @size: accepts positive int
  * @c: accepts char
  * Return: char pointer
@@ -19,7 +19,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	if(ptr == NULL)
+	if (ptr == NULL)
 	{
 		return (NULL);
 	}
