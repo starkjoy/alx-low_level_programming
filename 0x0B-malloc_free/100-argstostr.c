@@ -23,13 +23,13 @@ char *argstostr(int ac, char **av)
 	{
 		for (i = 1; i < ac; i++)
 		{
-			ptr = (char*)malloc(sizeof(char) * (*av));
+			ptr = (char*)malloc(sizeof(char) * *(av));
 			
 			if (av[i] == NULL)
 			{
 				int j;
 
-				for (j = 0; j < av[i]; j++)
+				for (j = 0; j < i; j++)
 				{
 					free(av[j]);
 
@@ -40,12 +40,11 @@ char *argstostr(int ac, char **av)
 		for (i = 2; i < ac; i++)
 		{
 			ptr = strcpy(ptr, av[1]);
-			ptr = strcat(ptr, "\n"av[i]);
+			ptr = strcat(ptr, ("\n"av[i]));
 		}
-		putchar("\n");
-		
-		return (ptr);
-
 	}
+	putchar("\n");
+	
+	return (ptr);
 
 }
