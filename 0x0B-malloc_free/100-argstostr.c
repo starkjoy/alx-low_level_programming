@@ -14,6 +14,7 @@ char *argstostr(int ac, char **av)
 	char *ptr;
 	int i, j;
 	int size = 0;
+	char *temp;
 
 	if (ac == 0 || av == NULL)
 	{
@@ -33,22 +34,18 @@ char *argstostr(int ac, char **av)
 	}
 	else
 	{
+		temp = ptr;
 		for (i = 0; i < ac; i++)
 		{
 			if (av[i] == NULL)
 			{
-				for (j = 0; j < i; j++)
-				{
-					free(av[j]);
-				}
 				free(ptr);
 				return (NULL);
 			}
-		}
-		for (i = 0; i < ac; i++)
-		{
-			strcat(ptr, av[i]);
-			strcat(ptr, "\n");
+			strcat(temp, av[i]);
+			temp = temp + strlen(ac[i]);
+			strcat(temp, "\n");
+			temp = temp + 1;
 		}
 	}
 	return (ptr);
