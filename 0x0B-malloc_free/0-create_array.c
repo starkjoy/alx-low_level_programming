@@ -17,8 +17,7 @@ char *create_array(unsigned int size, char c)
 
 	if (ptr == NULL)
 	{
-		printf("failed to allocate memory\n");
-		return (1);
+		return (printf("failed to allocate memory\n"));
 	}
 	for (i = 0; i < size; i++)
 	{
