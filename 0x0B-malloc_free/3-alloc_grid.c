@@ -26,11 +26,11 @@ int **alloc_grid(int width, int height)
 
 		for (k = 0; k < height; k++)
 		{
-			printf("%i %i", grid[i][k]);
+			printf("%i", grid[i][k]);
 		}
 	}
 
-	ptr = malloc(sizeof(int*) * (strlen(grid) + 1));
+	ptr = malloc(sizeof(int*) * grid + 1));
 
 	if (ptr == NULL)
 	{
