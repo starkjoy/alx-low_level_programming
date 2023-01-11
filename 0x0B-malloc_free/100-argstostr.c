@@ -22,7 +22,7 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i < ac; i++)
 	{
-		size = size + strlen(av[i]);
+		size = size + strlen(av[i]) + 1;
 	}
 
 	ptr = (char*)malloc(sizeof(char) * size);
@@ -47,8 +47,9 @@ char *argstostr(int ac, char **av)
 		}
 		for (i = 0; i < ac; i++)
 		{
-			ptr = strcat(ptr, av[i]);
-			ptr = strcat(ptr, "\n");
+			strcat(ptr, av[i]);
+			strcat(ptr, "\n");
+			ptr = ptr + strlen(av[i] + 1;
 		}
 	}
 	return (ptr);
