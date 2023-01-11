@@ -26,10 +26,8 @@ char *_strdup(char *str)
 	else
 	{
 
-		ptr = strdup(str);
+		ptr = strcpy(ptr,str);
 
 		return (ptr);
 	}
-
-	free(ptr);
 }
