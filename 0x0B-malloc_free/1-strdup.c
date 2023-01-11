@@ -10,20 +10,26 @@
 
 char *_strdup(char *str)
 {
-	char *s;
+	char *ptr;
 
-	unsigned int size = strlen(str) + 1;
+	ptr = malloc(sizeof(char*));
 
-	s = malloc(sizeof(char) * size);
-
-	if (s == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	s = strdup(str);
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
+	else
+	{
 
-	free(s);
+		ptr = strdup(str);
+		
+		return (ptr);
+	}
 
-	return (s);
+	free(ptr);
 }
