@@ -23,7 +23,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	if (ptr[0] == '\0') 
+	else if (ptr[0] == '\0') 
 	{
 
 		ptr = strdup(str);
