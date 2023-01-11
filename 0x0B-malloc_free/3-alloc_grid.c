@@ -11,7 +11,7 @@
 
 int **alloc_grid(int width, int height)
 {
-	char *ptr;
+	int *ptr;
 	int i, k;
 	int **grid;
 
@@ -30,7 +30,7 @@ int **alloc_grid(int width, int height)
 		}
 	}
 
-	ptr = malloc(sizeof(int*) * grid + 1);
+	ptr = malloc(sizeof(int*) * grid);
 
 	if (ptr == NULL)
 	{
