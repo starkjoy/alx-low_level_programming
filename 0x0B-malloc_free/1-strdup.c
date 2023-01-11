@@ -2,31 +2,25 @@
 #include <stdlib.h>
 
 /**
- * create_array - create a char array
- * @size: accepts positive int
- * @c: accepts char
+ * strdup - create a char array
+ * @str: accepts positive int
  * Return: char pointer
  */
 
-char *create_array(unsigned int size, char c)
+char *_strdup(char *str)
 {
 	char *ptr;
-	unsigned int i;
 
-	ptr = malloc(sizeof(char) * size);
+	ptr = strdup(str);
 
-	if (size == 0)
-	{
-		return (NULL);
-	}
+	ptr = malloc(sizeof(char) * sizeof(str));
+
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < size; i++)
-	{
-		ptr[i] = c;
-	}
+
+	free(ptr);
 
 	return (ptr);
 }
