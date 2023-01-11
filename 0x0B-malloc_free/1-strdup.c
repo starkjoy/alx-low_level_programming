@@ -10,21 +10,18 @@
 
 char *_strdup(char *str)
 {
-	char *ptr;
 	char *s;
 
-	s = str;
-
-	ptr = strdup(s);
-
-	ptr = malloc(sizeof(char) * 1);
+	s = malloc(sizeof(char) * 1);
 
 	if (s == NULL)
 	{
 		return (NULL);
 	}
 
-	free(ptr);
+	s = strdup(str);
+	str = s;
+	free(s);
 
-	return (s);
+	return (str);
 }
