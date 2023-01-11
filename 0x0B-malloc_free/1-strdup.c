@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * strdup - create a char array
+ * _strdup - create a char array
  * @str: accepts positive int
  * Return: char pointer
  */
@@ -26,7 +26,7 @@ char *_strdup(char *str)
 	else
 	{
 
-		ptr = strcpy(ptr,str);
+		ptr = strcpy(ptr, str);
 
 		return (ptr);
 	}
