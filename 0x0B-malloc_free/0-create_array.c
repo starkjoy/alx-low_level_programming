@@ -17,7 +17,7 @@ char *create_array(unsigned int size, char c)
 
 	if (size != 0 && ptr == NULL)
 	{
-		return (puts("failed to allocate memory"));
+		return (NULL);
 	}
 	else
 	{
@@ -25,7 +25,7 @@ char *create_array(unsigned int size, char c)
 		{
 			ptr[i] = c;
 		}
-	}
 
-	return ptr;
+		return (ptr);
+	}
 }
