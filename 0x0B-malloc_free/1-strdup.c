@@ -27,10 +27,9 @@ char *_strdup(char *str)
 	{
 
 		ptr = strdup(str);
-		
+		ptr[0] = '\0';
 		return (ptr);
 	}
 
 	free(ptr);
-	return (1);
 }
