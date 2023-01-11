@@ -13,38 +13,43 @@ char *argstostr(int ac, char **av)
 {
 	char *ptr;
 	int i, j;
+	int size = 0;
 
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
 
-	while (ac > 1)
+	for (i = 0; i < ac; i++)
 	{
-		for (i = 1; i < ac; i++)
+		size = size + strlen(av[i]) + 1;
+	}
+
+	ptr = (char*)malloc(sizeof(char) * size);
+
+	if (ptr = NULL)
+	{
+		return (NULL);
+	}
+	else
+	{
+		for (i = 0; i < ac; i++)
 		{
-			ptr = (char*)malloc(sizeof(char) * *(av));
-			
 			if (av[i] == NULL)
 			{
-				int j;
-
 				for (j = 0; j < i; j++)
 				{
 					free(av[j]);
-
-					return (NULL);
 				}
+				free(ptr);
+				return (NULL);
 			}
 		}
-		for (i = 2; i < ac; i++)
+		for (i = 0; i < ac; i++)
 		{
-			ptr = strcpy(ptr, av[1]);
-			ptr = strcat(ptr, ("\n"av[i]));
+			ptr = strcat(ptr, av[i]);
+			ptr = strcat(ptr, "\n");
 		}
 	}
-	putchar("\n");
-	
 	return (ptr);
-
 }
