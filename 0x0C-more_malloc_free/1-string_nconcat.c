@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * *string_nconcat - concats two strings
+ * string_nconcat - concats two strings
  * @s1: accepts integer
  * @s2: accepts char
  * @n: accepts positive int
@@ -12,8 +12,9 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *ptr1;
-	int size, i;
+	void *ptr1;
+	int size;
+	int i;
 
 	if (s1 == NULL)
 	{
@@ -26,7 +27,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	
 	size = strlen(s1) + strlen(s2);
 
-	ptr = malloc(sizeof(char) * (size + 1));
+	ptr = malloc(s1) * size + 1;
 
 	if (ptr == NULL)
 	{
