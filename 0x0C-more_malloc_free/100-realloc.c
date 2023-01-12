@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * *realloc - reallocates memory using malloc and free
+ * _realloc - reallocates memory using malloc and free
  * @old_size: accepts positive int
  * @new_size: accepts positive int
  * @ptr: accepts pointer of any type
