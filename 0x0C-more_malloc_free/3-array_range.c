@@ -12,7 +12,7 @@
 int *array_range(int min, int max)
 {
 	int width;
-	int ptr;
+	int *ptr;
 	int i;
 
 	if (min > max)
@@ -30,11 +30,11 @@ int *array_range(int min, int max)
 	}
 	else
 	{
-		for (i = 0, i < width; i++)
+		for (i = 0; i < width; i++)
 		{
 			ptr[i] = min + i;
 		}
-		
+	
 		return (ptr);
 	}
 }
