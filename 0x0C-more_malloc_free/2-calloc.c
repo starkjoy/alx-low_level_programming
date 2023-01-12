@@ -9,7 +9,7 @@
  * Return: void
  */
 
-void *_calloc(unsigned int nmemb, unsigned int size);
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *ptr;
 	unsigned int width;
