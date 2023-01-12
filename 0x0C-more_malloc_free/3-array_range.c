@@ -6,7 +6,7 @@
  * array_range - creates an array of integers
  * @min: accepts integer
  * @max: accepts int
- * Return: void
+ * Return: int
  */
 
 int *array_range(int min, int max)
@@ -34,7 +34,7 @@ int *array_range(int min, int max)
 		{
 			ptr[i] = min + i;
 		}
-	
+
 		return (ptr);
 	}
 }
