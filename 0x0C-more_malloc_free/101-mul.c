@@ -13,34 +13,39 @@ int main(int argc, char *argv[])
 	void *ptr1;
 	void *ptr2;
 
-	if (argc != 2)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	ptr1 = malloc(sizeof(int)) * argv[1];
-	ptr2 = malloc(sizeof(int)) * argv[2];
+	ptr1 = malloc(sizeof(int));
+	ptr2 = malloc(sizeof(int));
 
 	if (ptr1 == NULL || ptr2 == NULL)
 	{
 		free(ptr1);
 		free(ptr2);
-		return (NULL);
+		printf("Error\n");
+		exit(98);
 	}
 	else
 	{
-		if (atoi(argv[argc - 1]) >= 0 || atoi(argv[argc]) >= 0)
+		if (atoi(argv[1]) >= 0 || atoi(argv[2]) >= 0)
 		{
 			printf("Error\n");
 			exit(98);
 		}
 		else
 		{
-			ptr1 = &atoi(argv[1]);
-			ptr2 = &atoi(argv[2]);
+			*ptr1 = atoi(argv[1]);
+			*ptr2 = atoi(argv[2]);
 
-			return (printf("%i\n", *(*ptr1 * ptr2)));
+			printf("%i\n", (*ptr1) * (*ptr2));
 		}
 	}
+	free(ptr1);
+	free(ptr2);
+
+	return (0);
 }
