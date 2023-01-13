@@ -10,8 +10,8 @@
 
 int main(int argc, char *argv[])
 {
-	void *ptr1;
-	void *ptr2;
+	int *ptr1;
+	int *ptr2;
 
 	if (argc != 3)
 	{
