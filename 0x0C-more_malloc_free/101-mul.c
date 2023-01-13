@@ -5,7 +5,8 @@
 
 int main(int argc, char *argv[])
 {
-    long unsigned int num1, num2, i;
+    long unsigned int i;
+    int num1, num2;
 
     if (argc != 3)
     {
