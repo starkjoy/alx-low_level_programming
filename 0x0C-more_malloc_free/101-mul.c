@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 
 /**
  * main - program entry
@@ -11,11 +13,28 @@
 int main(int argc, char *argv[])
 {
 	int *num1, *num2;
+	long int i;
 	
 	if (argc != 3)
 	{
 		printf("Error\n");
 		exit(98);
+	}
+	for (i = 0; i < strlen(argv[1]); i++)
+	{
+		if (!(isdigit(argv[1][i])))
+		{
+			printf("Error\n");
+			exit(98);
+		}
+	}
+	for (i = 0; i < strlen(argv[2]); i++)
+	{
+		if (!(isdigit(argv[2][i])))
+		{
+			printf("Error\n");
+			exit(98);
+		}
 	}
 
 	num1 = malloc(sizeof(int));
