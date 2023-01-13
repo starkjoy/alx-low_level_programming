@@ -5,7 +5,7 @@
 
 int main(int argc, char *argv[])
 {
-    int num1, num2, i;
+    long unsigned int num1, num2, i;
 
     if (argc != 3)
     {
@@ -36,6 +36,6 @@ int main(int argc, char *argv[])
         printf("Error\n");
         exit(98);
     }
-    printf("%d\n", num1 * num2);
+    printf("%ld\n", num1 * num2);
     return (0);
 }
