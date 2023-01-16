@@ -2,24 +2,20 @@
 #include <stdio.h>
 
 /**
- * new_dog - initializes a variable
+ * init_dog - initializes a variable
+ * @d: accepts struct of dog
  * @name: accepts string
  * @age: accepts float
  * @owner: accepts string
- * Return: pointer
+ * Return: void
  */
 
-dog_t *new_dog(char *name, float age, char *owner)
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	dog_t *ndogs
-	{
-		ndogs->name = name;
-		ndogs->age = age;
-		ndogs->owner = owner;
-	};
+	if (d == NULL)
+		return;
 
-	if (ndogs == NULL)
-		return (NULL);
-
-	return (ndogs);
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 }
