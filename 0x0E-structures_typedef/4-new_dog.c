@@ -11,7 +11,7 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *ndogs
+	struct dog_t *ndogs
 	{
 		ndogs->name = name;
 		ndogs->age = age;
