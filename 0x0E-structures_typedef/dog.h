@@ -6,6 +6,7 @@
  * @name: accepts string
  * @age: accepts float
  * @owner: accepts string
+ * Description: Data Structure for dog
  */
 
 struct dog
