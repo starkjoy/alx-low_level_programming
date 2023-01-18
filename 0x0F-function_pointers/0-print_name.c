@@ -11,14 +11,16 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	f(name)
-	{
-		int i;
+	int i;
 
+	void namprint(char *)
+	{
 		for (i = 0; i < strlen(name); i++)
 		{
 			_putchar(name[i]);
 		}
 		_putchar("\n");
 	}
+	namprint = f;
+	namprint(name);
 }
