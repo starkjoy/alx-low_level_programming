@@ -13,7 +13,7 @@ void print_name(char *name, void (*f)(char *))
 {
 	int i;
 
-	void namprint(char *)
+	f(name)
 	{
 		for (i = 0; i < strlen(name); i++)
 		{
@@ -21,6 +21,4 @@ void print_name(char *name, void (*f)(char *))
 		}
 		_putchar("\n");
 	}
-	namprint = f;
-	namprint(name);
 }
