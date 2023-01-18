@@ -11,10 +11,10 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	int i;
-
 	f(name)
 	{
+		int i;
+
 		for (i = 0; i < strlen(name); i++)
 		{
 			_putchar(name[i]);
