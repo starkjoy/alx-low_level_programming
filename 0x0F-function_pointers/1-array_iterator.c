@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * array_iterator
+ * array_iterator - iterates over array
  * @array: accepts integer array
  * @size: accepts struct size_t
  * @action: accepts fuction
@@ -10,7 +10,7 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	long unsigned int i;
+	unsigned long int i;
 
 	if (array == NULL || action == NULL)
 	{
