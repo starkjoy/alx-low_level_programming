@@ -1,6 +1,5 @@
 #include <stdarg.h>
 #include <stdio.h>
-#include <string.h>
 
 /**
  * print_all - prints data type set
@@ -13,6 +12,7 @@ void print_all(const char * const format, ...)
 	va_list args;
 	char *temp;
 	int i = 0;
+	unsigned int valid_formats = 0b1011;
 
 	va_start(args, format);
 
@@ -44,7 +44,7 @@ void print_all(const char * const format, ...)
 				printf("(nil)");
 				break;
 		}
-		if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's') && format[(i + 1)] != '\0')
+		if((valid_formats >> (format[i] - 'a')) & 1 && format[i+i] != '\0')
 			printf(", ");
 		i++;
 	}
