@@ -12,7 +12,6 @@ void print_all(const char * const format, ...)
 	va_list args;
 	char *temp;
 	int i = 0;
-	unsigned int valid_formats = 0b1011;
 
 	va_start(args, format);
 
@@ -23,6 +22,8 @@ void print_all(const char * const format, ...)
 	}
 	while (format[i])
 	{
+		unsigned int valid_formats = 0b1011;
+
 		switch (format[i])
 		{
 			case 'c':
