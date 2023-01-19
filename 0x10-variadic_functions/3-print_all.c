@@ -1,5 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
+#include <string.h>
 
 /**
  * print_all - prints data type set
@@ -22,8 +23,6 @@ void print_all(const char * const format, ...)
 	}
 	while (format[i])
 	{
-		unsigned int valid_formats = 0b1011;
-
 		switch (format[i])
 		{
 			case 'c':
@@ -45,7 +44,7 @@ void print_all(const char * const format, ...)
 				printf("(nil)");
 				break;
 		}
-		if((valid_formats >> (format[i] - 'a')) & 1 && format[i+i] != '\0')
+		if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's') && format[(i + 1)] != '\0')
 			printf(", ");
 		i++;
 	}
