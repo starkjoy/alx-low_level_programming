@@ -17,7 +17,6 @@ void print_all(const char * const format, ...)
 
 	while (format == NULL)
 	{
-		printf("\n");
 		return;
 	}
 
