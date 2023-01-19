@@ -1,5 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
+#include <string.h>
 
 /**
  * print_all - prints data type set
@@ -43,7 +44,7 @@ void print_all(const char * const format, ...)
 				printf("(nil)");
 				break;
 		}
-		if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's') && format[(i + 1)] != '\0')
+		if (strchr("cifs", format[i]) && format[i + i] != '\0')
 			printf(", ");
 		i++;
 	}
