@@ -10,10 +10,11 @@
 
 void print_all(const char * const format, ...)
 {
-	va_list args; char *temp; int i = 0;
+	va_list args; 
+	char *temp; 
+	int i = 0;
 
 	va_start(args, format);
-
 	while (format == NULL)
 	{
 		printf("\n");
@@ -42,8 +43,8 @@ void print_all(const char * const format, ...)
 				printf("(nil)");
 				break;
 		}
-		if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's') &&
-				format[(i + 1)] != '\0')
+		if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' ||
+					format[i] == 's') && format[(i + 1)] != '\0')
 			printf(", ");
 		i++;
 	}
