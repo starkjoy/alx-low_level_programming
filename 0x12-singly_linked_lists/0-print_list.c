@@ -22,7 +22,7 @@ size_t print_list(const list_t *h)
 		printf("[%u] (%s)\n", len, str);
 	}
 
-	n = print_list(head);
+	n = list_t head;
 
 	printf("-> %lu elements\n", n);
 
