@@ -10,8 +10,8 @@
 
 void print_all(const char * const format, ...)
 {
-	va_list args; 
-	char *temp; 
+	va_list args;
+	char *temp;
 	int i = 0;
 
 	va_start(args, format);
