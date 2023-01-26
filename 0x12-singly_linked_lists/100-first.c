@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void main_constructor(void) __attribute_((constructor));
+void main_constructor(void) __attribute__((constructor));
 
 /**
  * main_constructor - Contructor function printing message before main
