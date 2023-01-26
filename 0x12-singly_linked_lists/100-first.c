@@ -1,14 +1,14 @@
 #include <stdio.h>
 
+void main_constructor(void) __attribute_((constructor));
+
 /**
- *  main - check the code
- *  Return: 0
+ * main_constructor - Contructor function printing message before main
+ * Returns: void
  */
 
-int main(void)
+void main_contructor(void)
 {
-       	printf("You' re beat! and yet, you must allow,\nI bore my house upon my back!\n");
-
-	return (0);
-
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
