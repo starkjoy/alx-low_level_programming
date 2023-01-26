@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
 #include "lists.h"
 
@@ -11,20 +9,19 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t n;
+	unsigned int nodes = 0;
 
-	if (str == NULL)
+	while (h)
 	{
-		printf("[0] (nil)");
+		printf("[%u] ", h->len);
+		if (h->str == NULL)
+			printf("(nil)\n");
+		else
+			printf("%s\n", h->str);
+
+		h = h->next;
+		nodes++;
 	}
-	else
-	{
-		printf("[%u] (%s)\n", len, str);
-	}
 
-	n = 2;
-
-	printf("-> %d elements\n", n);
-
-	return (n);
+	return (nodes);
 }
