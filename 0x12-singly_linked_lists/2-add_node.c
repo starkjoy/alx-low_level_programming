@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * add_node - adds a new node 
+ * list_t add_node - adds a new node 
  * @head: accepts pointer to pointer
  * @str: accepts char
  * Return: returns variable of type list_t
