@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include "lists.h"
+
+/**
+ * print_listint - prints all elements of a list_t
+ * @h: accepts pointer to list_t
+ * Return: returns type size_t
+ */
+
+size_t print_listint(const listint_t *h)
+{
+	unsigned int nodes = 0;
+
+	while (h)
+	{
+		printf("%u", h->n);
+		h = h->next;
+		nodes++;
+	}
+
+	return (nodes);
+}
