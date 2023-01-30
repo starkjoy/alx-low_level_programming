@@ -5,14 +5,14 @@
 
 /**
  * add_nodeint_end - adds a new node
+ * @n: accepts integer
  * @head: accepts pointer to pointer
  * Return: returns variable of type list_t
  */
 
-listint_t *add_nodeint_end(list_t **head, const int n)
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *new_node, *temp;
-	int length = 0;
 
 	new_node = malloc(sizeof(listint));
 	if (new_node == NULL)
@@ -20,6 +20,7 @@ listint_t *add_nodeint_end(list_t **head, const int n)
 		return (NULL);
 	}
 
+	new_node->n = n;
 	if (*head == NULL)
 	{
 		new_node->next = *head;
