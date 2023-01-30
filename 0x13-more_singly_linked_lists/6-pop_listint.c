@@ -9,7 +9,7 @@
  * Return: returns int
  */
 
-int pop_listint_t(listint_t **head)
+int pop_listint(listint_t **head)
 {
 	listint_t *new_node;
 	int n;
