@@ -6,13 +6,13 @@
 /**
  * add_nodeint - adds a new node
  * @head: accepts pointer to pointer
+ * @n: 
  * Return: returns variable of type list_t
  */
 
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *new_node;
-	int length = 0;
 
 	new_node = malloc(sizeof(listint_t));
 	if (new_node == NULL)
