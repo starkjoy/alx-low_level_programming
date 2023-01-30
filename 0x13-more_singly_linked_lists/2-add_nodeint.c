@@ -6,7 +6,7 @@
 /**
  * add_nodeint - adds a new node
  * @head: accepts pointer to pointer
- * @n: accepts int 
+ * @n: accepts int
  * Return: returns variable of type list_t
  */
 
