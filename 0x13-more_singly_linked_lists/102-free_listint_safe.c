@@ -15,14 +15,14 @@ size_t free_listint_safe(listint_t **h)
 	size_t size = 0;
 
 	temp = *h;
-	while (*h)
+
+	while (temp)
 	{
-		temp = *h;
 		*h = (*h)->next;
 		free(temp);
+		temp = *h;
 		size++;
 	}
-	free(*h);
 
 	*h = NULL;
 
