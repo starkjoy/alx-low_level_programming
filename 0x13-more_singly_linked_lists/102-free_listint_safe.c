@@ -43,9 +43,7 @@ void free_list(listint_t *head)
 	if (head)
 	{
 		temp = head;
-		temp = temp->next;
+		head = head->next;
 		free(temp);
-		free_list(temp);
 	}
-	free(head);
 }
