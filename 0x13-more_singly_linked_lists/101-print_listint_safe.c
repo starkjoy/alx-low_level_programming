@@ -22,10 +22,12 @@ size_t print_listint_safe(const listint_t *head)
 
 		if (temp == fast)
 		{
+			printf("-> [%p] %d\n", (void *)temp, temp->n);
 			exit(98);
 		}
-		nodes++;
 	}
+	printf("[%p] %d\n", (void *)temp, temp->n);
+	nodes++;
 
 	return (nodes);
 }
