@@ -16,34 +16,20 @@ size_t free_listint_safe(listint_t **h)
 	listint_t *temp;
 	size_t size = 0;
 
-	temp = *h;
-
-	while (temp)
+	if (h == NULL || *h == NULL)
 	{
-		*h = (*h)->next;
-		free_list(temp);
+		return (0);
+	}
+
+	while (*h)
+	{
 		temp = *h;
+		*h = (*h)->next;
+		free(temp);
 		size++;
 	}
 
 	*h = NULL;
 
 	return (size);
-}
-/**
- * free_list - Frees list recursively
- * @head - listint_t head
- * Return: Nothing
- */
-
-void free_list(listint_t *head)
-{
-	listint_t *temp;
-
-	if (head)
-	{
-		temp = head;
-		head = head->next;
-		free(temp);
-	}
 }
