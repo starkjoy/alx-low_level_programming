@@ -19,7 +19,7 @@ size_t print_listint_safe(const listint_t *head)
 	while (one && two && two->next && head)
 	{
 		one = one->next;
-		two = two->next;
+		two = two->next->next;
 		if (one == two)
 		{
 			printf("-> [%p] %d\n", (void *)head, head->n);
