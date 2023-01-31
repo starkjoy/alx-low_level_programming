@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "lists.h"
 
 /**
@@ -10,11 +11,19 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t nodes = 0;
+	const listint_t *temp = head;
+	const listint_t *fast = head;
 
-	while (head)
+	while (fast && fast->next)
 	{
-		printf("[%p] %d\n", head, head->n);
-		head = head->next;
+		printf("[%p] %d\n", temp, temp->n);
+		temp = temp->next;
+		fast = fast->next->next;
+
+		if (temp == fast)
+		{
+			exit(98);
+		}
 		nodes++;
 	}
 
