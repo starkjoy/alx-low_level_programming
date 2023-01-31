@@ -9,6 +9,8 @@
  * Return: returns void
  */
 
+void free_list(listint_t *head);
+
 size_t free_listint_safe(listint_t **h)
 {
 	listint_t *temp;
