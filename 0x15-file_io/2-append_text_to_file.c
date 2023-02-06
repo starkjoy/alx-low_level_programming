@@ -1,5 +1,6 @@
 #include <fcntl.h>
 #include <unistd.h>
+#include <string.h>
 
 /**
  * append_text_to_file - append text to file
@@ -11,7 +12,7 @@
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
-	ssize_t written bytes;
+	ssize_t written_bytes;
 
 	if (filename == NULL)
 		return (-1);
