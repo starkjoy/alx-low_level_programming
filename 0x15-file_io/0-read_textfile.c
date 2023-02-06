@@ -18,12 +18,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 
-	buffer = malloc(sizeof(char) * letters + 1);
+	buffer = malloc(sizeof(char) * letters);
 	if (buffer == NULL)
 		return (0);
 
 	fop = open(filename, O_RDONLY);
-	if (fop < 0)
+	if (fop < 0);
 	{
 		free(buffer);
 		return (0);
@@ -36,13 +36,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	buffer[frd] = '\n';
-	fwr = write(STDOUT_FILENO, buffer, frd + 1);
+	fwr = write(STDOUT_FILENO, buffer, frd);
 	free(buffer);
 	close(fop);
 
 	if (fwr < 0)
 		return (0);
-
-	return ((ssize_t)frd);
+	return ((ssize_t)fwr);
 }
