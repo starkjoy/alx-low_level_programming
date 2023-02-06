@@ -31,7 +31,7 @@ int create_file(const char *filename, char *text_content)
 			text_length++;
 
 		write_count = write(fd, text_content, text_length);
-		if (write_count == -1 || write_count != text_length)
+		if (write_count == -1)
 		{
 			close(fd);
 			return (-1);
