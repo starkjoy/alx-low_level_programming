@@ -36,10 +36,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	buffer[frd] = '/n';
+	buffer[frd] = '\n';
 	fwr = write(STDOUT_FILENO, buffer, frd + 1);
 	free(buffer);
-	close(fop);i
+	close(fop);
 
 	if (fwr < 0)
 		return (0);
