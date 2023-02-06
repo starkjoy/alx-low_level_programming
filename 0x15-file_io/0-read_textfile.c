@@ -40,12 +40,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	write_count = write(STDOUT_FILENO, buffer, read_count);
+	write_count = write(STDOUT_FILENO, buffer, read_bytes);
+	if (write_count == -1)
+	{
+		free(buffer);
+		close(fd);
+		return (0);
+	}
+
 	free(buffer);
 	close(fd);
-
-	if (write_count == -1)
-		return (0);
-
+	
 	return (read_count);
 }
