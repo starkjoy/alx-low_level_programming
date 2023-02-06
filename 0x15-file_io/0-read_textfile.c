@@ -12,35 +12,40 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fop, frd, fwr;
+	int fd;
+	ssize_t read_count, write_count;
 	char *buffer;
 
-	if (filename == NULL)
+	if (!(filename))
+		return (0);
+
+	fd = open(filename, O_RDONLY);
+
+	if (fd == -1)
 		return (0);
 
 	buffer = malloc(sizeof(char) * letters);
-	if (buffer == NULL)
-		return (0);
 
-	fop = open(filename, O_RDONLY);
-	if (fop < 0)
+	if (!(buffer))
 	{
-		free(buffer);
+		close(fd);
 		return (0);
 	}
 
-	frd = read(fop, buffer, letters);
-	if (frd < 0)
+	read_count = read(fd, buffer, letters);
+	if (read_count == -1)
 	{
 		free(buffer);
+		close(fd);
 		return (0);
 	}
 
-	fwr = write(STDOUT_FILENO, buffer, frd);
+	write_count = write(STDOUT_FILENO, buffer, read_count);
 	free(buffer);
-	close(fop);
+	close(fd);
 
-	if (fwr < 0)
+	if (write_count == -1)
 		return (0);
-	return ((ssize_t)fwr);
+
+	return (read_count);
 }
