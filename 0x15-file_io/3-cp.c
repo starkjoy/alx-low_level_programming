@@ -5,7 +5,7 @@
 #define BUFSIZE 1024
 
 /**
- * m - copies data from file to file
+ * main - copies data from file to file
  * @argc: agruments count
  * @argv: arguments passed
  * Return: returns int
@@ -60,5 +60,5 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
 		exit(100);
 	}
-	return (0);
+	return 0;
 }
