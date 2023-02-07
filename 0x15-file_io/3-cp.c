@@ -5,13 +5,13 @@
 #define BUFSIZE 1024
 
 /**
- * create_file - creates a file
+ * main - copies data from file to file
  * @argc: agruments count
  * @argv: arguments passed
  * Return: returns int
  */
 
-int main(int argc, cahr *argv[])
+int main(int argc, char *argv[])
 {
 	int fd_from, fd_to, close_from, close_to;
 	char buf[BUFSIZE];
