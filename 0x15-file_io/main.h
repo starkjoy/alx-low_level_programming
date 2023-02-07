@@ -1,3 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+#ifndef BUFSIZE
+#define BUFSISE 1024
+#endif
+
 #ifndef MAIN_H
 #define MAIN_H
 
