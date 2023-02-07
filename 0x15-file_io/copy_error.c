@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * copy_file - copies file
