@@ -5,6 +5,7 @@
  * main - program entry
  * @argc: argument count
  * @argv: argument parameters
+ * Return: returns an int
  */
 
 int main(int argc, char *argv[])
