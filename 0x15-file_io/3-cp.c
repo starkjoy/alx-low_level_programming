@@ -40,21 +40,11 @@ int main(int argc, char *argv[])
 		}
 	}
 	if (read_from == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(98);
-	}
-	close_from = close(fd_from);
-	if (close_from == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
-		exit(100);
-	}
-	close_to = close(fd_to);
-	if (close_to == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
-		exit(100);
-	}
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]),
+			exit(98);
+	close_from = close(fd_from) == -1 ? dprintf(STDERR_FILENO,
+			"Error: Can't close fd %d\n", fd_from), exit(100), -1 : close(fd_from);
+	close_to = close(fd_to) == -1 ? dprintf(STDERR_FILENO,
+			"Error: Can't close fd %d\n", fd_to), exit(100), -1 : close(fd_to);
 	return (0);
 }
