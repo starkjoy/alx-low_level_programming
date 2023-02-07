@@ -2,6 +2,8 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include "main.h"
+#include <stdlib.h>
+#include <errno.h>
 
 /**
  * main - copies data from file to file
@@ -20,10 +22,10 @@ int main (int argc, char *argv[])
 		exit(97);
 	}
 
-	int fd_from = open_file(argv[1], 0_RDONLY);
+	int fd_from = open_file(argv[1], O_RDONLY);
 	int fd_to = open_file(argv[2], O_WRONLY | O_TRUNC | O_CREAT);
 
-	copy_file(fd__from, fd_to);
+	copy_file(fd_from, fd_to);
 
 	if (close(fd_from) == -1)
 		error_exit(100, "close fd");
