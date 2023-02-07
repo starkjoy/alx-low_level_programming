@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Usage: %s elf_filename\n", argv[0]);
 		return (98);
 	}
-	if ((fd == open(argv[1], O_RDONLY)) < 0)
+	if ((fd = open(argv[1], O_RDONLY)) < 0)
 	{
 		perror("open");
 		return (98);
