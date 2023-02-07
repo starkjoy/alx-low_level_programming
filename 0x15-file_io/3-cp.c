@@ -5,7 +5,7 @@
 #define BUFSIZE 1024
 
 /**
- * main - copies data from file to file
+ * m - copies data from file to file
  * @argc: agruments count
  * @argv: arguments passed
  * Return: returns int
