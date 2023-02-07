@@ -2,41 +2,75 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include <sys/stat.h>
+#define BUFSIZE 1024
 
 /**
  * create_file - creates a file
- * @filename: accepts string
- * @text_content: accepts string
+ * @argc: agruments count
+ * @argv: arguments passed
  * Return: returns int
  */
 
-int create_file(const char *filename, char *text_content)
+int main(int argc, cahr *argv[])
 {
-	int fd, write_count;
-	mode_t mode = S_IRUSR | S_IWUSR;
-	size_t text_length = 0;
+	int fd_from, fd_to, close_from, close_to;
+	char buf[BUFSIZE];
+	ssize_t read_from, write_to;
 
-	if (!(filename))
-		return (-1);
-
-	fd = open(filename, O_CREAT | O_TRUNC | O_WRONLY, mode);
-
-	if (fd == -1)
-		return (-1);
-
-	if (text_content)
+	if (argc != 3)
 	{
-		while (text_content[text_length])
-			text_length++;
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97);
+	}
 
-		write_count = write(fd, text_content, text_length);
-		if (write_count == -1)
+	fd_from = open(argv[1], O_RDONLY);
+
+	if (fd_from == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
+	}
+
+	fd_to = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
+
+	if (fd_to == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+		exit(99);
+	}
+
+	while ((read_from = read(fd_from, buf, BUFSIZE)) > 0)
+	{
+		write_to = write(fd_to, buf, read_from);
+
+		if (write_to == -1 || write_to != read_from)
 		{
-			close(fd);
-			return (-1);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			exit(99);
 		}
 	}
-	close(fd);
-	return (1);
+
+	if (read_from == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %\n", argv[1]);
+		exit(98);
+	}
+
+	close_from = close(fd_from);
+
+	if (close_from == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
+		exit(100);
+	}
+
+	close_to = close(fd_to);
+
+	if (close_to == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
+		exit(100);
+	}
+
+	return (0);
 }
