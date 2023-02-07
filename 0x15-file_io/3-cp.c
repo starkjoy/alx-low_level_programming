@@ -13,8 +13,6 @@
  */
 
 int open_file(const char *file, int flags);
-void copy_file(int fd_from, int fd_to);
-void error_exit(int code, const char *file);
 
 int main (int argc, char *argv[])
 {
