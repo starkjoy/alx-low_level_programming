@@ -1,11 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <fcntl.h>
-#include <unistd.h>
-#define BUFSIZE 1024
+#include "main.h"
 
 /**
- * create_file - creates a file
+ * main - creates a file
  * @argc: agruments count
  * @argv: arguments passed
  * Return: returns int
