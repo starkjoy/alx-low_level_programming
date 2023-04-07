@@ -18,6 +18,11 @@ hash_table_t *hash_table_create(unsigned long int size)
 	else
 	{
 		table->array = (hash_node_t **)calloc(size, sizeof(hash_node_t *));
+		if (!(table->array))
+		{
+			free(table);
+			return (NULL);
+		}
 		return (table);
 	}
 }
