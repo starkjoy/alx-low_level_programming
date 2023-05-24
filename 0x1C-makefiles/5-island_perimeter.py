@@ -13,20 +13,19 @@ def island_perimeter(grid):
     - Mapped matrix using row and column length
     - Navigated matrix using square bracket notations
     '''
-
-    pmtr = 0
+    
     rows = len(grid)
     cols = len(grid[0])
-
-    for ri in range(1, rows - 1):
-        for ci in range(1, cols - 1):
-            if grid[ri][ci] == 1:
-                if grid[ri - 1][ci] == 0:
-                    pmtr += 1
-                if grid[ri][ci - 1] == 0:
-                    pmtr += 1
-                if grid[ri + 1][ci] == 0:
-                    pmtr += 1
-                if grid[ri][ci + 1] == 0:
-                    pmtr += 1
-    return pmtr
+    perimeter = 0
+    for i in range(1, rows - 1):
+        for j in range(1, cols - 1):
+            if grid[i][j] == 1:
+                if grid[i - 1][j] == 0:
+                    perimeter += 1
+                if grid[i + 1][j] == 0:
+                    perimeter += 1
+                if grid[i][j - 1] == 0:
+                    perimeter += 1
+                if grid[i][j + 1] == 0:
+                    perimeter += 1
+    return perimeter
