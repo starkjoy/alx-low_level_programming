@@ -21,15 +21,12 @@ def island_perimeter(grid):
     for ri in range(rows):
         for ci in range(cols):
             if grid[ri][ci] == 1:
-                pmtr += 4
-
-                if ri > 0 and grid[ri - 1][ci] == 1:
-                    pmtr -= 2
-                if ci > 0 and grid[ri][ci - 1] == 1:
-                    pmtr -= 2
-                if ri < rows - 1 and grid[ri + 1][ci] == 1:
-                    pmtr -= 2
-                if ci < cols - 1 and grid[ri][ci + 1] == 1:
-                    pmtr -= 2
+                if grid[ri - 1][ci] == 0:
+                    pmtr += 1
+                if grid[ri][ci - 1] == 0:
+                    pmtr += 1
+                if grid[ri + 1][ci] == 0:
+                    pmtr += 1
+                if grid[ri][ci + 1] == 0:
+                    pmtr += 1
     return pmtr
-
