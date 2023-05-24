@@ -15,7 +15,7 @@ def island_perimeter(grid):
     - Mapped matrix using row and column length
     - Navigated matrix using square bracket notations
     '''
-    
+
     width = len(grid[0])
     height = len(grid)
     edges = 0
