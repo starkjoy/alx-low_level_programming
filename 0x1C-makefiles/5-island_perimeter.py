@@ -18,8 +18,8 @@ def island_perimeter(grid):
     rows = len(grid)
     cols = len(grid[0])
 
-    for ri in range(rows):
-        for ci in range(cols):
+    for ri in range(1, rows - 1):
+        for ci in range(1, cols - 1):
             if grid[ri][ci] == 1:
                 if grid[ri - 1][ci] == 0:
                     pmtr += 1
